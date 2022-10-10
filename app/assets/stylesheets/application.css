@@ -63,7 +63,7 @@ h5 {
 .topnav {
   font-family: 'Courier Prime', monospace;
   overflow: hidden;
-  color: rgb(0, 0, 0);
+  color: white;
   background-color: white;
   width: 100%;
   position: fixed; /* Set the navbar to fixed position */
@@ -93,11 +93,6 @@ h5 {
 .topnav a.active {
   background-color: lightgray;
   color: black;
-}
-
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
 /* <<<< ABOUT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -265,7 +260,7 @@ p {
 /* <<<< PROJECT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .project-section {
-  height: 120vh;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -293,7 +288,7 @@ h3 {
   margin: 1rem .25em;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(200, 200, 200);
-  height: 40vh;
+  height: 55vh;
   text-align: center;
   border: 2px solid black;
 }
@@ -343,6 +338,25 @@ h3 {
   font-size: 2vh;
   padding: 0.5vh;
   text-align: center;
+}
+
+.overview {
+  background-color: rgb(108, 39, 119);
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(101%);
+  transition: transform 0.7s ease-in;
+}
+
+.card:hover .overview {
+  transform: translateY(0);
 }
 
 
