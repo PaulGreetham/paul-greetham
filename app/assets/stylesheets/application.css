@@ -13,3 +13,521 @@
  *= require_tree .
  *= require_self
  */
+
+
+ html {
+  scroll-behavior: smooth;
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+}
+
+* { color: black; text-decoration: none; }
+
+.banner {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  scroll-behavior: auto;
+}
+
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 12vh;
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding-left: 8vh;
+  padding-top: 52vh;
+  font-weight: 100;
+}
+
+h5 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 6vh;
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding-left: 8vh;
+  font-weight: 100;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  font-family: 'Courier Prime', monospace;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  width: 100%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 2vh 2vh;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(128, 128, 128);
+  color: white;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: lightgray;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* <<<< ABOUT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.about-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-section h3 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 8vh;
+  font-weight: 100;
+  padding-right: 8vh;
+  padding-top: 8vh;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+@media screen and (min-width: 40em) {
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    flex: 0 1 calc(48% - 1em);
+  }
+}
+
+.avatar {
+  background-image: url("ProfileImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 75vh;
+  height: 50vh;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 5px rgb(200, 200, 200);
+  opacity: 0.9;
+  margin-left: 8vh;
+}
+
+.avatar:hover {
+  box-shadow: 10px 10px rgb(128, 128, 128);
+  background-color: rgb(250, 250, 250);
+  transition: 0.8s;
+  opacity: 1;
+}
+
+@media screen and (min-width: 40em) {
+  .avatar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 0 1 calc(100% - 1em);
+  }
+}
+
+.button-cv {
+  font-size: 3vh;
+  height: 8vh;
+  width: 5vh;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 4vh;
+  margin-left: 8vh;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Courier Prime', monospace;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+  box-shadow: 2px 2px 5px rgb(200, 200, 200);
+}
+
+.button-cv:hover {
+  box-shadow: 10px 10px rgb(128, 128, 128);
+  background-color: rgb(250, 250, 250);
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 40em) {
+  .button-cv {
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-between;
+    flex: 0 1 calc(40%);
+  }
+}
+
+.button-cl {
+  font-size: 3vh;
+  font-family: 'Courier Prime', monospace;
+  text-align: center;
+  height: 8vh;
+  width: 5vh;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 4vh;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.8s;
+  box-shadow: 2px 2px 5px rgb(200, 200, 200);
+  vertical-align: middle;
+}
+
+h6 {
+  font-family: 'Courier Prime', monospace;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.button-cl:hover {
+  box-shadow: 10px 10px rgb(128, 128, 128);
+  background-color: rgb(250, 250, 250);
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 40em) {
+  .button-cl {
+    flex-wrap: wrap;
+    width: 45%;
+    justify-content: space-between;
+    flex: 0 1 calc(40%);
+  }
+}
+
+h4 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 6vh;
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding-left: 8vh;
+  font-weight: 100;
+  height: 6vh;
+}
+
+p {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2vh;
+  padding: 0;
+  margin: 0;
+  color: black;
+  padding-left: 8vh;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+/* <<<< PROJECT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.project-section {
+  height: 120vh;
+  width: 100vw;
+}
+
+h3 {
+  font-family: 'Courier Prime', monospace;
+  padding-left: 8vh;
+  padding-top: 18vh;
+  font-size: 8vh;
+  font-weight: 100;
+}
+
+.cards {
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.3s linear;
+  font-family: 'Courier Prime', monospace;
+  margin: 8vh;
+}
+
+.card {
+  flex: 0 1 calc(32% - 1em);
+  box-sizing: border-box;
+  margin: 1rem .25em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(200, 200, 200);
+  height: 40vh;
+  text-align: center;
+  border: 2px solid black;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 10px 10px rgb(128, 128, 128);
+  transition: 0.8s;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 calc(32% - 1em);
+}
+}
+
+@media screen and (min-width: 60em) {
+  .card {
+    flex: 0 1 calc(32% - 1em);
+}
+}
+
+/* <<<<< My Game Weather Card >>>>> */
+
+#my_game_weather {
+  background-image: url("Screenshot 2022-09-23 at 13.14.19.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#my_game_weather h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#my_game_weather p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+/* <<<<< VinYin Yoga Card >>>>> */
+
+#vinyin_yoga {
+  background-image: url("af37c4d3-ef46-416b-a9ba-c559402e2997.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#vinyin_yoga h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#vinyin_yoga p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+/* <<<<< naturEscape Card >>>>> */
+
+#naturescape {
+  background-image: url("Screenshot 2022-09-23 at 12.25.27.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+#naturescape h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#naturescape p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+/* <<<<< Tom Whitehead Card >>>>> */
+
+#tom_whitehead {
+  background-image: url("Screenshot 2022-09-20 at 18.22.44.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#tom_whitehead h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#tom_whitehead p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+/* <<<<< My Personal Profile Card >>>>> */
+
+#my_personal_profile {
+  background-image: url("Screenshot 2022-09-23 at 12.23.45.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#my_personal_profile h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#my_personal_profile p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+/* <<<<< Development In Progress Card >>>>> */
+
+#development_in_progress {
+  background-image: url("Screenshot 2022-09-23 at 13.13.56.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#development_in_progress h1 {
+  background-color: white;
+  font-size: 3vh;
+  padding: 0.5vh;
+}
+
+#development_in_progress p {
+  background-color: white;
+  font-size: 2vh;
+  padding: 0.5vh;
+  text-align: center;
+}
+
+
+
+/* <<<< CONTACT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.contact-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contact-section h3 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 8vh;
+  font-weight: 100;
+  padding-right: 8vh;
+  padding-top: 8vh;
+  text-align: center;
+}
+
+.social-menu {
+  display: flex;
+	list-style-type: none;
+  flex-flow: row;
+  column-gap: 3vh;
+  justify-content: center;
+  padding-top: 4vh;
+}
+
+.social-menu i {
+	color: #fff;
+	width: 15vh;
+	height: 15vh;
+	border-radius: 50%;
+	font-size: 5vh;
+	margin-right: 10px;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+}
+
+.social-menu i:before {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+        font-weight: 400;
+}
+
+.fa-linkedin {
+	background:#007bb6
+}
+
+.fa-instagram {
+	background: rgb(255, 66, 66)
+
+}
+
+.fa-github {
+	background: black
+}
+
+.social-menu i:hover {
+	opacity: 0.9;
+	border-radius: 10px;
+  transition: 0.4s;
+}
+
+.contact-text {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.5vh;
+  text-align: center;
+}
