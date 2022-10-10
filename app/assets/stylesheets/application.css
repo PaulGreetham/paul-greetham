@@ -99,48 +99,31 @@ h5 {
 
 .about-section {
   height: 100vh;
-  width: 100vw;
 }
 
 .about-section h3 {
+  text-align: center;
   font-family: 'Courier Prime', monospace;
+  padding-left: 8vh;
+  padding-top: 9vh;
   font-size: 8vh;
   font-weight: 100;
-  padding-right: 8vh;
-  padding-top: 8vh;
-  text-align: right;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
-@media screen and (min-width: 40em) {
-  .column {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    flex: 0 1 calc(48% - 1em);
-  }
 }
 
 .avatar {
   background-image: url("ProfileImage.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  width: 75vh;
-  height: 50vh;
+  background-size: cover;
+  width: 80vh;
+  height: 60vh;
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 2px 2px 5px rgb(200, 200, 200);
   opacity: 0.9;
-  margin-left: 8vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vh;
 }
 
 .avatar:hover {
@@ -150,25 +133,16 @@ h5 {
   opacity: 1;
 }
 
-@media screen and (min-width: 40em) {
-  .avatar {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    flex: 0 1 calc(100% - 1em);
-  }
-}
 
 .button-cv {
-  font-size: 3vh;
-  height: 8vh;
-  width: 5vh;
+  font-size: 1em;
+  height: 3em;
+  width: 80vh;
   text-align: center;
   color: black;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 4vh;
-  margin-left: 8vh;
+  margin-top: 0.5em;
   cursor: pointer;
   display: inline-block;
   font-family: 'Courier Prime', monospace;
@@ -177,6 +151,10 @@ h5 {
   border-radius: 10px;
   transition: 0.8s;
   box-shadow: 2px 2px 5px rgb(200, 200, 200);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vh;
 }
 
 .button-cv:hover {
@@ -185,25 +163,16 @@ h5 {
   transition: 0.8s;
 }
 
-@media screen and (min-width: 40em) {
-  .button-cv {
-    flex-wrap: wrap;
-    width: 45%;
-    justify-content: space-between;
-    flex: 0 1 calc(40%);
-  }
-}
-
 .button-cl {
-  font-size: 3vh;
+  font-size: 1em;
+  height: 3em;
+  width: 80vh;
   font-family: 'Courier Prime', monospace;
   text-align: center;
-  height: 8vh;
-  width: 5vh;
   color: black;
   text-transform: uppercase;
   font-weight: 500;
-  margin-top: 4vh;
+  margin-top: 0.5em;
   cursor: pointer;
   display: inline-block;
   border: 2px solid black;
@@ -212,27 +181,21 @@ h5 {
   transition: 0.8s;
   box-shadow: 2px 2px 5px rgb(200, 200, 200);
   vertical-align: middle;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h6 {
   font-family: 'Courier Prime', monospace;
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 1.5em;
 }
 
 .button-cl:hover {
   box-shadow: 10px 10px rgb(128, 128, 128);
   background-color: rgb(250, 250, 250);
   transition: 0.8s;
-}
-
-@media screen and (min-width: 40em) {
-  .button-cl {
-    flex-wrap: wrap;
-    width: 45%;
-    justify-content: space-between;
-    flex: 0 1 calc(40%);
-  }
 }
 
 h4 {
@@ -248,13 +211,12 @@ h4 {
 
 p {
   font-family: 'Courier Prime', monospace;
-  font-size: 2vh;
-  padding: 0;
-  margin: 0;
+  font-size: 0.9em;
+  padding: 10vh;
   color: black;
-  padding-left: 8vh;
   text-align: justify;
-  overflow-y: scroll;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 /* <<<< PROJECT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -264,7 +226,7 @@ p {
   width: 100vw;
 }
 
-h3 {
+.project-section h3 {
   font-family: 'Courier Prime', monospace;
   padding-left: 8vh;
   padding-top: 18vh;
