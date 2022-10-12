@@ -267,23 +267,7 @@ p {
   opacity: 0.8;
 }
 
-@media screen and (min-width: 40em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.card {
-    flex: 0 1 calc(32% - 1em);
-}
-}
-
-@media screen and (min-width: 60em) {
-  .card {
-    flex: 0 1 calc(32% - 1em);
-}
-}
 
 /* <<<<< My Game Weather Card >>>>> */
 
