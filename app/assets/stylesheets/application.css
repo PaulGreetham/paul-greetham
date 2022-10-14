@@ -408,7 +408,7 @@ p {
 /* <<<<< My Game Weather Card >>>>> */
 
 #my_game_weather {
-  background-image: url("Screenshot 2022-09-23 at 13.14.19.png");
+  background-image: url("Screenshot 2022-10-14 at 14.46.00.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -454,7 +454,7 @@ p {
 /* <<<<< naturEscape Card >>>>> */
 
 #naturescape {
-  background-image: url("Screenshot 2022-09-23 at 12.25.27.png");
+  background-image: url("Screenshot 2022-10-14 at 15.02.28.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -478,7 +478,7 @@ p {
 /* <<<<< Tom Whitehead Card >>>>> */
 
 #tom_whitehead {
-  background-image: url("Screenshot 2022-09-20 at 18.22.44.png");
+  background-image: url("Screenshot 2022-10-14 at 15.33.52.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -501,7 +501,7 @@ p {
 /* <<<<< My Personal Profile Card >>>>> */
 
 #my_personal_profile {
-  background-image: url("Screenshot 2022-09-23 at 12.23.45.png");
+  background-image: url("Screenshot 2022-10-13 at 16.44.50.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -521,22 +521,22 @@ p {
 }
 
 
-/* <<<<< Development In Progress Card >>>>> */
+/* <<<<< Purple Movies Card >>>>> */
 
-#development_in_progress {
-  background-image: url("Screenshot 2022-09-23 at 13.13.56.png");
+#purple_movies {
+  background-image: url("Screenshot 2022-10-14 at 15.36.25.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
-#development_in_progress h1 {
+#purple_movies h1 {
   background-color: white;
   font-size: 3vh;
   padding: 0.5vh;
 }
 
-#development_in_progress p {
+#purple_movies p {
   background-color: white;
   font-size: 2vh;
   padding: 0.5vh;
