@@ -227,8 +227,8 @@ p {
 /* <<<< PROJECT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .project-section {
-  height: 150vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
 }
 
 .project-section h3 {
@@ -249,6 +249,7 @@ p {
   transition: 0.3s linear;
   font-family: 'Courier Prime', monospace;
   margin: 8vh;
+  overflow: hidden;
 }
 
 .card {
@@ -426,7 +427,7 @@ p {
 
 .contact-section {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .contact-section h3 {
