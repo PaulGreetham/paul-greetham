@@ -113,7 +113,7 @@ h5 {
 }
 
 @media(max-width: 576px) {
-  h5 {
+  .topnav a {
     font-size: 1em;
   }
 }
@@ -194,8 +194,6 @@ h3 {
 
 @media(max-width: 480px) {
   .avatar {
-    margin-left: 0.25em;
-    margin-right: 0.25em;
     width: 20em;
   }
 }
@@ -316,6 +314,18 @@ p {
   padding-left: 5vh;
 }
 
+@media(max-width: 768px) {
+  .p {
+    width: 20em;
+  }
+}
+
+@media(max-width: 576px) {
+  .p {
+    width: 20em;
+  }
+}
+
 
 @media(max-width: 992px) {
   .about-section {
@@ -330,6 +340,7 @@ p {
 
   h2 {
     margin-top: 1em;
+    font-size: 6vh;
   }
 }
 
@@ -340,6 +351,7 @@ p {
 
   h2 {
     margin-top: 1em;
+    font-size: 6vh;
   }
 }
 
