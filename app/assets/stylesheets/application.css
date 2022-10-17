@@ -195,7 +195,7 @@ h3 {
 @media(max-width: 480px) {
   .avatar {
     width: 20em;
-    height: 14em;
+    height: 13.5em;
   }
 }
 
@@ -313,7 +313,6 @@ p {
   font-family: 'Courier Prime', monospace;
   font-size: 1em;
   color: black;
-  text-align: justify;
   overflow: scroll;
   margin: 0;
   padding-right: 5vh;
@@ -329,7 +328,6 @@ p {
 @media(max-width: 576px) {
   .p {
     width: 20em;
-    text-align: center;
   }
 }
 
