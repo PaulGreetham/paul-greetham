@@ -435,11 +435,6 @@ ul {
 @media(max-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
-    margin: 12vh;
-  }
-
-  .card {
-    margin: 0.25em;
   }
 }
 
@@ -684,5 +679,12 @@ ul {
 
   .contact-text {
     font-size: 1em;
+  }
+
+  .social-menu i {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    font-size: 3vh;
   }
 }
