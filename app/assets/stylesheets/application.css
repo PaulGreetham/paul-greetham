@@ -355,6 +355,10 @@ p {
   }
 }
 
+ul {
+  display: inline-flex;
+}
+
 /* <<<< PROJECT SECTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .project-section {
@@ -431,6 +435,11 @@ p {
 @media(max-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+    margin: 12vh;
+  }
+
+  .card {
+    margin: 0.25em;
   }
 }
 
