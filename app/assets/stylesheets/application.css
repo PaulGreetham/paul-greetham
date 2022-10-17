@@ -195,7 +195,7 @@ h3 {
 @media(max-width: 480px) {
   .avatar {
     width: 20em;
-    height: 13em;
+    height: 14em;
   }
 }
 
@@ -294,6 +294,7 @@ h6 {
 
   h2 {
     text-align: center;
+    padding-left: 0vh;
   }
 }
 
@@ -328,7 +329,7 @@ p {
 @media(max-width: 576px) {
   .p {
     width: 20em;
-    text-align: left;
+    text-align: center;
   }
 }
 
