@@ -195,6 +195,7 @@ h3 {
 @media(max-width: 480px) {
   .avatar {
     width: 20em;
+    height: 13em;
   }
 }
 
@@ -290,6 +291,10 @@ h6 {
   .button-cl {
     width: 20em;
   }
+
+  h2 {
+    text-align: center;
+  }
 }
 
 h4 {
@@ -323,6 +328,7 @@ p {
 @media(max-width: 576px) {
   .p {
     width: 20em;
+    text-align: left;
   }
 }
 
