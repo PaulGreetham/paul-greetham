@@ -16,7 +16,7 @@
 
 
  html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
  body {
@@ -120,15 +120,14 @@ h5 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(128, 128, 128);
+  background-color: black;
   color: white;
   border-radius: 5px;
-  opacity: 0.8;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: lightgray;
+  background-color: white;
   color: black;
 }
 
