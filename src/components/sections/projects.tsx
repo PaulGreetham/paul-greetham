@@ -24,7 +24,7 @@ const projects: Project[] = [
     description: "Weather app for football fans",
     details: "A responsive portfolio website showcasing my projects and skills, featuring dark mode ans somehtign",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
+    projectUrl: "https://www.mgw.football/",
     githubUrl: "https://github.com/username/portfolio"
   },
   {
@@ -33,8 +33,8 @@ const projects: Project[] = [
     description: "Full-stack e-commerce solution",
     details: "Complete e-commerce platform with shopping cart, payment processing, and order management",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
-    githubUrl: "https://github.com/username/ecommerce"
+    projectUrl: "https://paul-greetham-check-it-out.netlify.app/",
+    githubUrl: "https://github.com/PaulGreetham/check-it-out"
   },
   {
     id: 3,
