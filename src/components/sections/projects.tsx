@@ -42,8 +42,8 @@ const projects: Project[] = [
     description: "Collaborative task tracker",
     details: "Real-time task management application with team collaboration features and progress tracking",
     technologies: ["Vue.js", "Firebase", "TypeScript"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
-    githubUrl: "https://github.com/username/taskmanager"
+    projectUrl: "https://vitalized-fs.vercel.app/",
+    githubUrl: "https://github.com/PaulGreetham/vitalized-fs"
   },
   {
     id: 4,
