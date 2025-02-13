@@ -13,7 +13,7 @@ type Project = {
   details: string
   technologies: TechIcon[]
   projectUrl: string
-  githubUrl: string
+  githubUrl?: string
 }
 
 // Project data
@@ -22,55 +22,54 @@ const projects: Project[] = [
     id: 1,
     title: "My Game Weather",
     description: "Weather app for football fans",
-    details: "A responsive portfolio website showcasing my projects and skills, featuring dark mode ans somehtign",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"].map(tech => techIcons[tech]),
+    details: "The most advanced football weather app ever created. How's the weather at YOUR game?",
+    technologies: ["Expo", "Next.js", "Supabase", "React Native", "TypeScript", "Tailwind CSS", "MapTiler", "iOS", "Android"].map(tech => techIcons[tech]),
     projectUrl: "https://www.mgw.football/",
-    githubUrl: "https://github.com/username/portfolio"
   },
   {
     id: 2,
     title: "Check It Out",
-    description: "Full-stack e-commerce solution",
-    details: "Complete e-commerce platform with shopping cart, payment processing, and order management",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"].map(tech => techIcons[tech]),
+    description: "Optimise moped maintenance routes",
+    details: "A web application designed to optimize moped maintenance routes and visualize Amsterdam's neighborhoods.",
+    technologies: ["React", "Node.js", "TypeScript", "MUI", "Mapbox", "Netlify"].map(tech => techIcons[tech]),
     projectUrl: "https://paul-greetham-check-it-out.netlify.app/",
     githubUrl: "https://github.com/PaulGreetham/check-it-out"
   },
   {
     id: 3,
     title: "Vitalized-FS",
-    description: "Collaborative task tracker",
-    details: "Real-time task management application with team collaboration features and progress tracking",
-    technologies: ["Vue.js", "Firebase", "TypeScript"].map(tech => techIcons[tech]),
+    description: "Search financial statements of listed companies",
+    details: "Built for investors, analysts, and finance professionals who need quick access to key financial metrics and statements.",
+    technologies: ["Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
     projectUrl: "https://vitalized-fs.vercel.app/",
     githubUrl: "https://github.com/PaulGreetham/vitalized-fs"
   },
   {
     id: 4,
-    title: "Workout Warrior",
-    description: "Real-time weather tracking",
-    details: "Weather forecasting application with interactive maps and detailed meteorological data",
-    technologies: ["React", "Node.js", "MongoDB"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
-    githubUrl: "https://github.com/username/weather"
+    title: "The Beautiful Beatiful Game",
+    description: "AI-powered football player biographies",
+    details: "An application that generates football player biographies in the style of famous authors using AI.",
+    technologies: ["OpenAI", "Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
+    projectUrl: "https://the-beautiful-beautiful-game.vercel.app/",
+    githubUrl: "https://github.com/PaulGreetham/the-beautiful-beautiful-game"
   },
   {
     id: 5,
-    title: "The Beautiful Beatiful Game",
-    description: "Social media metrics tracker",
-    details: "Analytics dashboard for tracking social media engagement and audience growth",
-    technologies: ["Angular", "Node.js", "PostgreSQL"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
-    githubUrl: "https://github.com/username/analytics"
+    title: "Workout Warrior",
+    description: "Personal workout companion",
+    details: "Workout Warrior allows users to search for exercise inspiration, log their gains, and watch workout videos from YouTube.",
+    technologies: ["Youtube", "React", "Node.js", "JavaScript", "CSS", "Axios", "Netlify"].map(tech => techIcons[tech]),
+    projectUrl: "https://workout-warrior.netlify.app/",
+    githubUrl: "https://github.com/PaulGreetham/workout-warrior"
   },
   {
     id: 6,
     title: "Found + Ground",
-    description: "Personal workout companion",
-    details: "Mobile-first fitness application for tracking workouts and monitoring progress",
-    technologies: ["React", "GraphQL", "MongoDB"].map(tech => techIcons[tech]),
-    projectUrl: "https://example.com",
-    githubUrl: "https://github.com/username/fitness"
+    description: "Coffee blog",
+    details: "Coffee blog showcasing the latest trends and expert insights, making it an essential resource for coffee enthusiasts.",
+    technologies: ["React", "Node.js", "TypeScript", "CSS", "Netlify"].map(tech => techIcons[tech]),
+    projectUrl: "https://found-and-ground.netlify.app/",
+    githubUrl: "https://github.com/PaulGreetham/found-and-ground"
   }
 ]
 
