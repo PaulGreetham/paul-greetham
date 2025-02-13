@@ -56,7 +56,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "The Beautiful Game",
+    title: "The Beautiful Beatiful Game",
     description: "Social media metrics tracker",
     details: "Analytics dashboard for tracking social media engagement and audience growth",
     technologies: ["Angular", "Node.js", "PostgreSQL"].map(tech => techIcons[tech]),
