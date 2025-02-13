@@ -75,8 +75,8 @@ const projects: Project[] = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative min-h-screen flex flex-col items-center justify-between bg-muted p-24">
-      <div className="z-10 w-full max-w-7xl">
+    <section id="projects" className="relative min-h-screen flex flex-col items-center justify-between bg-muted p-4 sm:p-8 md:p-24">
+      <div className="z-10 w-full max-w-7xl px-4 sm:px-6 md:px-8">
         <h1 className={cn(
           "text-3xl font-semibold leading-none tracking-tight text-center mb-20 mt-4"
         )}>
@@ -84,8 +84,8 @@ export function ProjectsSection() {
         </h1>
       </div>
       
-      <div className="z-10 w-full max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="z-10 w-full max-w-7xl px-4 sm:px-6 md:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {projects.map((project) => (
             <Card key={project.id} className="flex flex-col">
               <CardHeader>
