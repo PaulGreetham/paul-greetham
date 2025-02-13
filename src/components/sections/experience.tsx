@@ -20,17 +20,6 @@ type ExperienceItem = {
   technologies?: string[]
 }
 
-type ExperienceCategory = {
-  id: string
-  label: string
-  subcategories?: {
-    id: string
-    label: string
-    items: ExperienceItem[]
-  }[]
-  items?: ExperienceItem[]
-}
-
 export function ExperienceSection() {
   // const [activeCategory, setActiveCategory] = useState(experienceData[0].id)
 
