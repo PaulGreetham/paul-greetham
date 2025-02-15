@@ -8,8 +8,6 @@ import {
   SiFirebase,
   SiVuedotjs,
   SiAngular,
-  SiPostgresql,
-  SiGraphql,
   SiTailwindcss,
   SiStripe,
   SiRedux,
@@ -27,7 +25,14 @@ import {
   SiAxios,
   SiCss3,
   SiJavascript,
-  SiOpenai
+  SiOpenai,
+  SiGithub,
+  SiGitlab,
+  SiFigma,
+  SiDocker,
+  SiJest,
+  SiCypress,
+  SiSass
 } from 'react-icons/si'
 
 export type TechIcon = {
@@ -72,16 +77,8 @@ export const techIcons: { [key: string]: TechIcon } = {
     name: "Angular",
     icon: SiAngular
   },
-  "PostgreSQL": {
-    name: "PostgreSQL",
-    icon: SiPostgresql
-  },
-  "GraphQL": {
-    name: "GraphQL",
-    icon: SiGraphql
-  },
   "Tailwind CSS": {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: SiTailwindcss
   },
   "Stripe": {
@@ -151,5 +148,33 @@ export const techIcons: { [key: string]: TechIcon } = {
   "OpenAI": {
     name: "OpenAI",
     icon: SiOpenai
+  },
+  "Github": {
+    name: "Github",
+    icon: SiGithub
+  },
+  "Gitlab": {
+    name: "Gitlab",
+    icon: SiGitlab
+  },
+  "Figma": {
+    name: "Figma",
+    icon: SiFigma
+  },
+  "Docker": {
+    name: "Docker",
+    icon: SiDocker
+  },
+  "Jest": {
+    name: "Jest",
+    icon: SiJest
+  },
+  "Cypress": {
+    name: "Cypress",
+    icon: SiCypress
+  },
+  "SCSS": {
+    name: "SCSS",
+    icon: SiSass
   }
 } as const 

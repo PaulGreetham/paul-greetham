@@ -4,6 +4,7 @@ import { DotPattern } from "@/components/ui/dot-pattern"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { techIcons, type TechIcon } from "@/config/tech-icons"
+import { motion } from "motion/react"
 
 // Define the project type
 type Project = {
@@ -38,7 +39,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Vitalized-FS",
-    description: "Search financial statements of listed companies",
+    description: "Listed company financial statements",
     details: "Built for investors, analysts, and finance professionals who need quick access to key financial metrics and statements.",
     technologies: ["Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
     projectUrl: "https://vitalized-fs.vercel.app/",
@@ -47,7 +48,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "The Beautiful Beatiful Game",
-    description: "AI-powered football player biographies",
+    description: "AI-powered footballer biographies",
     details: "An application that generates football player biographies in the style of famous authors using AI.",
     technologies: ["OpenAI", "Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
     projectUrl: "https://the-beautiful-beautiful-game.vercel.app/",
@@ -76,58 +77,75 @@ const projects: Project[] = [
 export function ProjectsSection() {
   return (
     <section id="projects" className="relative min-h-screen flex flex-col items-center justify-between bg-muted p-4 sm:p-8 md:p-24">
-      <div className="z-10 w-full max-w-7xl px-4 sm:px-6 md:px-8">
-        <h1 className={cn(
-          "text-3xl font-semibold leading-none tracking-tight text-center mb-20 mt-4"
-        )}>
+      <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className={cn(
+            "text-3xl font-semibold leading-none tracking-tight text-center mb-8"
+          )}
+        >
           Projects
-        </h1>
+        </motion.h1>
       </div>
       
-      <div className="z-10 w-full max-w-7xl px-4 sm:px-6 md:px-8">
+      <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {projects.map((project) => (
-            <Card key={project.id} className="flex flex-col">
-              <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="mb-4">{project.details}</p>
-                <div className="flex flex-wrap gap-3">
-                  {project.technologies.map((tech) => {
-                    const Icon = tech.icon
-                    return (
-                      <div 
-                        key={tech.name} 
-                        className="text-2xl text-primary hover:text-primary/80 transition-colors"
-                        title={tech.name}
-                      >
-                        <Icon />
-                      </div>
-                    )
-                  })}
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <a 
-                  href={project.projectUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-sm underline"
-                >
-                  View Project
-                </a>
-                <a 
-                  href={project.githubUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-sm underline"
-                >
-                  GitHub
-                </a>
-              </CardFooter>
-            </Card>
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ 
+                duration: 0.5,
+                delay: index * 0.1 // Stagger the animations
+              }}
+            >
+              <Card className="flex flex-col h-[280px] hover:shadow-lg transition-shadow">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <CardDescription className="text-sm">{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="mb-4 text-sm line-clamp-3">{project.details}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => {
+                      const Icon = tech.icon
+                      return (
+                        <div 
+                          key={tech.name} 
+                          className="text-xl text-primary hover:text-primary/80 transition-colors"
+                          title={tech.name}
+                        >
+                          <Icon />
+                        </div>
+                      )
+                    })}
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-between">
+                  <a 
+                    href={project.projectUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm underline"
+                  >
+                    View Project
+                  </a>
+                  <a 
+                    href={project.githubUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-sm underline"
+                  >
+                    GitHub
+                  </a>
+                </CardFooter>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>

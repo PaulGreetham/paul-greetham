@@ -26,7 +26,7 @@ export function ExperienceSection() {
   return (
     <section id="experience" className="relative min-h-screen flex flex-col items-center bg-background py-24 px-4 sm:px-8 md:px-24">
       <div className="z-10 w-full max-w-6xl">
-        <h2 className={cn(typography.h2, "text-center mb-12")}>Experience</h2>
+        <h2 className={cn(typography.h2, "text-center mb-8")}>Experience</h2>
         
         <Tabs defaultValue={experienceData[0].id} className="w-full">
           <TabsList className="w-full justify-start mb-8 overflow-x-auto">
