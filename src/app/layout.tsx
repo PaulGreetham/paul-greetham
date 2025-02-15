@@ -1,4 +1,4 @@
-import "@/app/globals.css"
+import "./globals.css"
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Navbar from '@/components/Navbar'
@@ -29,7 +29,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen bg-background">
+          <main className="min-h-screen bg-background antialiased">
             <Navbar />
             {children}
           </main>
