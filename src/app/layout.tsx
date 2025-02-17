@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Paul Greetham',
-  description: 'Portfolio website',
+  description: 'Personal website',
 }
 
 export default function RootLayout({
