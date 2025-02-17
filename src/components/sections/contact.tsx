@@ -80,7 +80,7 @@ export function ContactSection() {
             </Circle>
           </div>
 
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center justify-between max-w-xl">
             <Circle ref={emailRef} href="mailto:pgreetham@protonmail.com" tooltip="Send me an email">
               <FaEnvelope className="size-12" />
             </Circle>

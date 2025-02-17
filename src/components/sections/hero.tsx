@@ -16,7 +16,7 @@ export function HeroSection() {
           Frontend & UI Developer
         </h2>
         <h2 className={cn(typography.h2, "text-muted-foreground mb-24")}>
-          Welcome to my portfolio
+          Welcome to my website
         </h2>
       </div>
       <div className="relative z-10">
