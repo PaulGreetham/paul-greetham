@@ -37,24 +37,24 @@ export function AboutSection() {
           className="text-center space-y-8"
         >
           <h2 className={cn(typography.h2, "mb-8")}>About Me</h2>
-          <div className="mx-auto max-w-3xl bg-card p-6 rounded-lg border border-border/50 hover:shadow-lg transition-shadow">
+          <div className="mx-auto mb-8 max-w-3xl bg-card p-6 rounded-lg border border-border/50 hover:shadow-lg transition-shadow">
             <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
               <AccordionItem value="item-1">
-                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                <AccordionTrigger>About me Q1?</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  TBC.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger>Is it styled?</AccordionTrigger>
+                <AccordionTrigger>About me Q2?</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It comes with default styles that matches the other components&apos; aesthetic.
+                  TBC.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger>Is it animated?</AccordionTrigger>
+                <AccordionTrigger>About me Q3?</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if you prefer.
+                  TBC.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -68,7 +68,6 @@ export function AboutSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          <h3 className={cn(typography.h3, "mb-8 text-center")}>Stack Experience</h3>
           <div className="relative -mx-4 md:-mx-24 overflow-hidden">
             <VelocityScroll defaultVelocity={1} numRows={2}>
               {techString}
