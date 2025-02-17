@@ -25,7 +25,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="fixed top-0 w-full flex items-center justify-between p-4 bg-background/80 backdrop-blur-sm border-b z-50">
+    <nav className="fixed top-0 w-full flex items-center justify-between p-4 bg-background/100 backdrop-blur-sm border-b z-50">
       {/* Mobile Menu Button */}
       <button
         className="md:hidden p-2"
