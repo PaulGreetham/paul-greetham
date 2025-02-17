@@ -15,8 +15,8 @@ A modern, responsive personal website built with Next.js and TypeScript, featuri
   - Experience timeline with tabbed navigation
   - Project showcase with animated cards
   - Contact section with animated connection beams
-- **Modern UI Components**: Built with Shadcn UI and custom components
-- **Performance Optimized**: Built with Next.js 14 for optimal performance and SEO
+- **Modern UI Components**: Built with Shadcn UI, Magic UI and custom components
+- **Performance Optimized**: Built with Next.js
 
 ## 🚀 Live Demo
 
@@ -32,6 +32,7 @@ A modern, responsive personal website built with Next.js and TypeScript, featuri
 ### Styling & UI Libraries & Icons
 - Tailwind CSS
 - Shadcn UI
+- Magic UI
 - CSS Variables for theming
 - Motion/React for animations
 - Lucide Icons
