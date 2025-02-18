@@ -49,7 +49,7 @@ export function AboutSection() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why tech?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  I built the websites for the UK businesses, including Stripe integration for UK-wide online beer sales. I developed the artwork of the businesses and wanted to move into a role where I could combine creativity and functionality. The transition to tech was a natural progression as I found myself increasingly drawn to the technical aspects of running the business. During the pandemic, I took the opportunity to formally transition into tech, completing an intensive bootcamp at School of Applied Technology and securing my first role as a Frontend Developer. This career change has allowed me to merge my creative background with technical problem-solving.
+                  I built the websites for the UK businesses, including Stripe integration for UK-wide online beer sales. I developed the artwork of the businesses and wanted to move into a role where I could combine creativity and functionality. The transition to tech was a natural progression as I found myself increasingly drawn to the technical aspects of running the business. During the pandemic, I took the opportunity to formally transition into tech, completing an intensive bootcamp at Le Wagon Amsterdam and the School of Applied Technology, and securing my first role as a Frontend Developer. This career change has allowed me to merge my creative background with technical problem-solving.
                 </AccordionContent>
               </AccordionItem>
               
