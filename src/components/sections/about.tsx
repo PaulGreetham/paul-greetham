@@ -38,23 +38,25 @@ export function AboutSection() {
         >
           <h2 className={cn(typography.h2, "mb-8")}>About Me</h2>
           <div className="mx-auto mb-8 max-w-3xl bg-card p-6 rounded-lg border border-border/50 hover:shadow-lg transition-shadow">
-            <Accordion type="single" collapsible defaultValue="item-1" className="w-full">
+            <Accordion type="single" collapsible defaultValue="item-1" className="w-full text-left">
               <AccordionItem value="item-1">
-                <AccordionTrigger>About me Q1?</AccordionTrigger>
-                <AccordionContent>
-                  TBC.
+                <AccordionTrigger>My background?</AccordionTrigger>
+                <AccordionContent className="text-left">
+                  I&apos;m from the UK where I ran a successful brewery and hospitality business for many years in Manchester. Due to COVID and Brexit, these businesses were sold or closed and I&apos;ve been in the Netherlands for nearly 3 years. During my time in Manchester, I built Beatnikz Republic from the ground up, starting as a small craft brewery and expanding into a successful taproom in the city centre. This experience gave me invaluable insights into business operations, customer service, and the importance of adapting to changing market conditions.
                 </AccordionContent>
               </AccordionItem>
+              
               <AccordionItem value="item-2">
-                <AccordionTrigger>About me Q2?</AccordionTrigger>
-                <AccordionContent>
-                  TBC.
+                <AccordionTrigger>Why tech?</AccordionTrigger>
+                <AccordionContent className="text-left">
+                  I built the websites for the UK businesses, including Stripe integration for UK-wide online beer sales. I developed the artwork of the businesses and wanted to move into a role where I could combine creativity and functionality. The transition to tech was a natural progression as I found myself increasingly drawn to the technical aspects of running the business. During the pandemic, I took the opportunity to formally transition into tech, completing an intensive bootcamp at School of Applied Technology and securing my first role as a Frontend Developer. This career change has allowed me to merge my creative background with technical problem-solving.
                 </AccordionContent>
               </AccordionItem>
+              
               <AccordionItem value="item-3">
-                <AccordionTrigger>About me Q3?</AccordionTrigger>
-                <AccordionContent>
-                  TBC.
+                <AccordionTrigger>Preferred stack?</AccordionTrigger>
+                <AccordionContent className="text-left">
+                  I have used Angular and TypeScript extensively in my professional work, but I am currently using React and this is my preference. I have built all of my personal projects using React and for my only commercial project, I have used my preferred stack of Next.js, React, TypeScript, Tailwind and Supabase, using Expo to deploy on iOS and Android. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies and currently exploring more advanced features of Next.js and React Server Components.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
