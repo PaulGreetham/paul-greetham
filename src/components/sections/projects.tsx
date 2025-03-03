@@ -3,6 +3,7 @@
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { techIcons, type TechIcon } from "@/config/tech-icons"
 import { motion } from "motion/react"
 
@@ -76,95 +77,102 @@ const projects: Project[] = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative min-h-screen flex flex-col items-center justify-between bg-muted p-4 sm:p-8 md:p-24">
-      <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className={cn(
-            "text-3xl font-semibold leading-none tracking-tight text-center mb-8"
-          )}
-        >
-          Projects
-        </motion.h1>
-      </div>
-      
-      <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ 
-                duration: 0.5,
-                delay: index * 0.1 // Stagger the animations
-              }}
-            >
-              <Card className="flex flex-col h-[280px] hover:shadow-lg transition-shadow">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <CardDescription className="text-sm">{project.description}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="mb-4 text-sm line-clamp-3">{project.details}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => {
-                      const Icon = tech.icon
-                      return (
-                        <div 
-                          key={tech.name} 
-                          className="text-xl text-primary hover:text-primary/80 transition-colors"
-                          title={tech.name}
-                        >
-                          <Icon />
-                        </div>
-                      )
-                    })}
-                  </div>
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                  {project.id === 1 ? (
-                    <span className="text-sm text-muted-foreground">
-                      To be released April &apos;25.
-                    </span>
-                  ) : (
-                    <>
-                      <a 
-                        href={project.projectUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-sm underline"
-                      >
-                        View Project
-                      </a>
-                      <a 
-                        href={project.githubUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-sm underline"
-                      >
-                        GitHub
-                      </a>
-                    </>
-                  )}
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
+    <TooltipProvider>
+      <section id="projects" className="relative min-h-screen flex flex-col items-center justify-between bg-muted p-4 sm:p-8 md:p-24">
+        <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className={cn(
+              "text-3xl font-semibold leading-none tracking-tight text-center mb-8"
+            )}
+          >
+            Projects
+          </motion.h1>
         </div>
-      </div>
-      <DotPattern 
-        className="[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
-        width={16}
-        height={16}
-        cx={1}
-        cy={1}
-        cr={1}
-      />
-    </section>
+        
+        <div className="z-10 w-full max-w-6xl px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ 
+                  duration: 0.5,
+                  delay: index * 0.1 // Stagger the animations
+                }}
+              >
+                <Card className="flex flex-col h-[280px] hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    <CardDescription className="text-sm">{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <p className="mb-4 text-sm line-clamp-3">{project.details}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => {
+                        const Icon = tech.icon
+                        return (
+                          <Tooltip key={tech.name}>
+                            <TooltipTrigger asChild>
+                              <div 
+                                className="text-xl text-primary hover:text-primary/80 transition-colors cursor-pointer"
+                              >
+                                <Icon />
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>{tech.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        )
+                      })}
+                    </div>
+                  </CardContent>
+                  <CardFooter className="flex justify-between">
+                    {project.id === 1 ? (
+                      <span className="text-sm text-muted-foreground">
+                        To be released April &apos;25.
+                      </span>
+                    ) : (
+                      <>
+                        <a 
+                          href={project.projectUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-sm underline"
+                        >
+                          View Project
+                        </a>
+                        <a 
+                          href={project.githubUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="text-sm underline"
+                        >
+                          GitHub
+                        </a>
+                      </>
+                    )}
+                  </CardFooter>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+        <DotPattern 
+          className="[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+          width={16}
+          height={16}
+          cx={1}
+          cy={1}
+          cr={1}
+        />
+      </section>
+    </TooltipProvider>
   )
 } 
