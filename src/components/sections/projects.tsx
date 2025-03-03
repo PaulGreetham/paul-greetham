@@ -23,7 +23,7 @@ const projects: Project[] = [
     id: 1,
     title: "My Game Weather",
     description: "Weather app for football fans",
-    details: "The most advanced football weather app ever created. How's the weather at YOUR game?",
+    details: "The most advanced football weather app ever created. How's the weather at YOUR game? On iOS and Android.",
     technologies: ["Expo", "Next.js", "Supabase", "React Native", "TypeScript", "Tailwind CSS", "MapTiler", "iOS", "Android"].map(tech => techIcons[tech]),
     projectUrl: "https://www.mgw.football/",
   },
@@ -127,22 +127,30 @@ export function ProjectsSection() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <a 
-                    href={project.projectUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-sm underline"
-                  >
-                    View Project
-                  </a>
-                  <a 
-                    href={project.githubUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-sm underline"
-                  >
-                    GitHub
-                  </a>
+                  {project.id === 1 ? (
+                    <span className="text-sm text-muted-foreground">
+                      To be released April &apos;25.
+                    </span>
+                  ) : (
+                    <>
+                      <a 
+                        href={project.projectUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-sm underline"
+                      >
+                        View Project
+                      </a>
+                      <a 
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-sm underline"
+                      >
+                        GitHub
+                      </a>
+                    </>
+                  )}
                 </CardFooter>
               </Card>
             </motion.div>

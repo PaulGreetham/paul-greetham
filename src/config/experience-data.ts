@@ -36,8 +36,7 @@ export const experienceData: ExperienceCategory[] = [
             location: "Amsterdam, NL",
             period: "October 2024 - Present",
             companyDescription: [
-              "Check is a start-up specialising in shared-mobility (mopeds and cars) within the Netherlands.",
-              "It is a high volume usage (20m+ trips) app that aims to redefine an industry."
+              "Check is a start-up specialising in shared-mobility (mopeds and cars) within the Netherlands. It is a high volume usage (20m+ trips) app that aims to redefine an industry."
             ],
             duties: [
               "Worked on frontend features and tickets for the back office custom built system, ToolShed, used by all departments within company.",
@@ -60,8 +59,7 @@ export const experienceData: ExperienceCategory[] = [
             location: "Amersfoort, NL",
             period: "April 2023 - September 2024",
             companyDescription: [
-              "RiskChallenger is a risk consultancy software provider within the communicative risk industry.",
-              "It is a Saas scale-up and used by multinational companies and government agencies."
+              "RiskChallenger is a risk consultancy software provider within the communicative risk industry. It is a Saas scale-up and used by multinational companies and government agencies."
             ],
             duties: [
               "Worked on frontend features and tickets for the back office custom built system, ToolShed, used by all departments within company.",
@@ -116,8 +114,7 @@ export const experienceData: ExperienceCategory[] = [
             location: "Remote",
             period: "September 2022 - December 2022",
             companyDescription: [
-              "Intensive web development bootcamp covering full-stack development.",
-              "Built multiple web applications using Ruby on Rails."
+              "Intensive web development bootcamp covering full-stack development. Built multiple web applications using Ruby on Rails."
             ],
             duties: [
               "Developed full-stack applications using Ruby on Rails",
@@ -140,8 +137,7 @@ export const experienceData: ExperienceCategory[] = [
             location: "Remote",
             period: "June 2022 - August 2022",
             companyDescription: [
-              "Foundation course in software development fundamentals.",
-              "Focus on JavaScript and modern web development practices."
+              "Foundation course in software development fundamentals. Focus on JavaScript and modern web development practices."
             ],
             duties: [
               "Learned JavaScript fundamentals",

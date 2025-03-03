@@ -34,7 +34,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className={cn(typography.h2, "text-muted-foreground mb-8")}
         >
-          Frontend & UI Developer
+          Frontend Developer
         </motion.h2>
         <motion.h2 
           initial={{ opacity: 0, y: -30 }}
@@ -48,7 +48,7 @@ export function HeroSection() {
       <div className="relative z-10">
         <TextReveal 
           text={`
-          I'm a Frontend & UI Developer.
+          I'm a Frontend Developer.
           I'm a Former Founder.
           I build scalable web and mobile applications.
           Let's create something amazing together.
