@@ -87,14 +87,11 @@ export const experienceData: ExperienceCategory[] = [
               "I founded Beatnikz Republic Brewing Co., in Manchester, UK. From brewing in my kitchen to producing 500,000L annually and exporting to 9 global markets and supplying supermarkets."
             ],
             duties: [
-              "Generated £1.3m annual revenue",
-              "100% yoy growth (4 years in a row)",
-              "Exported to 9 different markets",
-              "Open 3 city centre bars in Manchetser",
-              "Full brand design and artwork direction",
-              "Built social media accounts to 14K from 0",
-              "Employed 25+ staff over 3 businesses",
-              "Raised €550k of capital investment"
+              "Achieved consistent 100% year-on-year growth for four consecutive years, generating £1.3m in annual revenue.",
+              "Expanded internationally, exporting to nine markets while securing UK-wide distribution.",
+              "Launched three city-centre bars in Manchester, creating 25+ jobs across multiple businesses.",
+              "Led full brand design, artwork direction, and grew social media presence from zero to 14K followers.",
+              "Successfully raised €550k in capital investment to fuel business growth from private investors."
             ],
             technologies: ["Business Development", "Brand Management", "Team Leadership", "Financial Management", "Marketing", "Operations"]
           }
