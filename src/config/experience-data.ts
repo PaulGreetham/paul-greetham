@@ -39,8 +39,9 @@ export const experienceData: ExperienceCategory[] = [
               "Check is a start-up specialising in shared-mobility (mopeds and cars) within the Netherlands. It is a high volume usage (20m+ trips) app that aims to redefine an industry."
             ],
             duties: [
-              "Worked on frontend features and tickets for the back office custom built system, ToolShed, used by all departments within company.",
-              "Built most advanced feature undertaken by Check, Planned Reservations, for cars. Involved creating new service areas, zones, sectors and subsectors using geojson from backend api.",
+              "Worked on frontend features and tickets for the back office custom built system, ToolShed, used by all departments.",
+              "Built most advanced feature undertaken by Check, Planned Reservations, for cars.",
+              "Created new service areas, zones, sectors and subsectors using geojson from backend api.",
               "Implemented draw functionality and animations in MapBox for better UX/UI.",
               "Added a new UI library, ShadCn, into the existing UI library to modernise an uninspiring UI."
             ],
@@ -62,9 +63,11 @@ export const experienceData: ExperienceCategory[] = [
               "RiskChallenger is a risk consultancy software provider within the communicative risk industry. It is a Saas scale-up and used by multinational companies and government agencies."
             ],
             duties: [
-              "Worked on frontend features and tickets for the back office custom built system, ToolShed, used by all departments within company.",
-              "Built most advanced feature undertaken by Check, Planned Reservations, for cars. Involved creating service areas, zones, sectors and subsectors using geojson from backend api.",
-              "something else here"
+              "Focussed on working through tickets for the custom built Saas system, including creating new features and fixing bugs.",
+              "Saught to improve the codebase and make it more maintainable and scalable, from both a technical and UX perspective.",
+              "Liased with internal teams to ensure relevant improvements that were needed by the clinets were on point.",
+              "Wrote tests using Cypress and Jest to ensure the code was working as expected and adhered to best practices.",
+              "Worked with the design team to ensure the UI was up to standard and adhered to the brand guidelines."
             ],
             technologies: ["Next.js", "Angular", "TypeScript", "Node.js", "HTML", "SCSS", "GitLab", "Cypress", "Jest"]
           }
