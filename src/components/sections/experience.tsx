@@ -44,25 +44,41 @@ export function ExperienceSection() {
           {experienceData.map((category) => (
             <TabsContent key={category.id} value={category.id}>
               {category.subcategories ? (
-                <Tabs defaultValue={category.subcategories[0].id} className="w-full">
-                  <TabsList className="w-full justify-start mb-6">
-                    {category.subcategories.map((sub) => (
-                      <TabsTrigger key={sub.id} value={sub.id}>
-                        {sub.label}
-                      </TabsTrigger>
-                    ))}
-                  </TabsList>
-
-                  {category.subcategories.map((sub) => (
-                    <TabsContent key={sub.id} value={sub.id}>
-                      <div className="grid gap-6">
-                        {sub.items.map((item) => (
-                          <ExperienceCard key={item.id} item={item} />
+                <>
+                  {/* Only show nested tabs on md and larger screens */}
+                  <div className="hidden md:block">
+                    <Tabs defaultValue={category.subcategories[0].id} className="w-full">
+                      <TabsList className="w-full justify-start mb-6">
+                        {category.subcategories.map((sub) => (
+                          <TabsTrigger key={sub.id} value={sub.id}>
+                            {sub.label}
+                          </TabsTrigger>
                         ))}
-                      </div>
-                    </TabsContent>
-                  ))}
-                </Tabs>
+                      </TabsList>
+
+                      {category.subcategories.map((sub) => (
+                        <TabsContent key={sub.id} value={sub.id}>
+                          <div className="grid gap-6">
+                            {sub.items.map((item) => (
+                              <ExperienceCard key={item.id} item={item} />
+                            ))}
+                          </div>
+                        </TabsContent>
+                      ))}
+                    </Tabs>
+                  </div>
+
+                  {/* Show all cards stacked on mobile */}
+                  <div className="block md:hidden">
+                    <div className="grid gap-6">
+                      {category.subcategories.map((sub) => (
+                        sub.items.map((item) => (
+                          <ExperienceCard key={item.id} item={item} />
+                        ))
+                      ))}
+                    </div>
+                  </div>
+                </>
               ) : (
                 <div className="grid gap-6">
                   {category.items?.map((item) => (
