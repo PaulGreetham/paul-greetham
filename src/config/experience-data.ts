@@ -104,6 +104,30 @@ export const experienceData: ExperienceCategory[] = [
     label: "Bootcamps",
     subcategories: [
       {
+        id: "salt",
+        label: "School of Applied Technology (SALT)",
+        items: [
+          {
+            id: 6,
+            title: "Full-Stack Trainee Developer",
+            organization: "School of Applied Technology (SALT)",
+            location: "Amsterdam, NL",
+            period: "January 2022 - April 2022",
+            companyDescription: [
+              "3 month full-stack trainee developer bootcamp at the School of Applied Technology (SALT). Embedded recruitment contract, but the firm went bankrupt in the Netherlands."
+            ],
+            duties: [
+              "Intensive 3 month training bootcamp, which included weekend and monthly testing.",
+              "Programming in a set team of 4 (mob programming).",
+              "Used modern stack of TypeScript, React, Redux, MongoDB, Express, HTML, SCSS and Git.",
+              "Final full-stack project witin a team of 4 focussing on B2C e-commerce.",
+              "Extensive unit and e2e testing using Jest and Cypress."
+            ],
+            technologies: ["TypeScript", "Redux", "MongoDB", "Express", "HTML", "SCSS", "Git", "Jest", "Cypress"]
+          }
+        ]
+      },
+      {
         id: "le-wagon",
         label: "Le Wagon Amsterdam",
         items: [
@@ -111,44 +135,22 @@ export const experienceData: ExperienceCategory[] = [
             id: 5,
             title: "Software Engineering Bootcamp",
             organization: "Le Wagon",
-            location: "Remote",
-            period: "September 2022 - December 2022",
+            location: "Amsterdam, NL",
+            period: "July 2022 - September 2022",
             companyDescription: [
-              "Intensive web development bootcamp covering full-stack development. Built multiple web applications using Ruby on Rails."
+              "Intensive 10-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of NaturEscape. Modules included:."
             ],
             duties: [
-              "Developed full-stack applications using Ruby on Rails",
-              "Implemented MVC architecture patterns",
-              "Built responsive web applications with Bootstrap",
-              "Worked with SQL databases and Active Record"
+              "Developed full-stack applications using Ruby on Rails.",
+              "Implemented MVC architecture patterns.",
+              "Built responsive web applications with Bootstrap.",
+              "Worked with SQL databases and Active Record.",
+              "Used with git and GitHub whilst pair programming."
             ],
             technologies: ["Ruby", "Rails", "PostgreSQL", "Bootstrap", "HTML", "CSS", "JavaScript"]
           }
         ]
       },
-      {
-        id: "salt",
-        label: "School of Applied Technology (SALT)",
-        items: [
-          {
-            id: 6,
-            title: "Introduction to Software Development",
-            organization: "School of Applied Technology",
-            location: "Remote",
-            period: "June 2022 - August 2022",
-            companyDescription: [
-              "Foundation course in software development fundamentals. Focus on JavaScript and modern web development practices."
-            ],
-            duties: [
-              "Learned JavaScript fundamentals",
-              "Built basic web applications",
-              "Practiced test-driven development",
-              "Collaborated on team projects"
-            ],
-            technologies: ["JavaScript", "HTML", "CSS", "Git", "Testing"]
-          }
-        ]
-      }
     ]
   },
   {
@@ -171,13 +173,10 @@ export const experienceData: ExperienceCategory[] = [
             duties: [
               "Introduction to UI Design",
               "Brand + Persoanlity",
-              "Layout",
-              "Design Principles",
-              "Interactivity",
-              "Typography",
-              "Color, Shapes + Effects",
-              "Iconography + Imagery",
-              "Design Processes",
+              "Design Principles & Processes",
+              "Layout, Interactivity & Animation",
+              "Color, Shapes & Effects",
+              "Typography, Iconography & Imagery",
               "Presenting Designs",
             ],
             technologies: ["UI Design", "Figma", "Moodboards", "Wireframing", "Prototyping"]
@@ -243,7 +242,31 @@ export const experienceData: ExperienceCategory[] = [
             ]
           }
         ]
-      }
+      },
+      {
+        id: "university",
+        label: "University",
+        items: [
+          {
+            id: 11,
+            title: "BA (Hons) English Literature & Language",
+            organization: "Manchester Metropolitan University",
+            location: "Manchester, UK",
+            period: "September 2002 - May 2006",
+            companyDescription: [
+              "A degree in English Literature & Language from Manchester Metropolitan University, which included modules/skills in:"
+            ],
+            duties: [
+              "Shakespearean Drama, Romanticism, Modernism, Postmodernism, and Contemporary Literature.",
+              "Ability to critically analyse texts to understand the author's intent and the context of the work.",
+              "Working in a team to discuss and debate texts and ideas as well as project work.",
+              "Political writing in the 20th Century and the works of George Orwell, Aldous Huxley, and Joseph Heller.",
+              "Critial film theory and the role of literature in film and media.",
+            ],
+            technologies: ["English Literature", "Language", "Critical Analysis", "Writing", "Critial Reading", "Group Work", "Presentation Skills", "Public Speaking"]
+          }
+        ]
+      },
     ]
   }
 ] 
