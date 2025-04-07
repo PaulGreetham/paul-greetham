@@ -18,6 +18,7 @@ type ExperienceItem = {
   companyDescription: string[]
   duties: string[]
   technologies?: string[]
+  websiteUrl?: string
 }
 
 export function ExperienceSection() {
@@ -112,7 +113,20 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.organization} | {item.location}</CardDescription>
           </div>
-          <span className="text-sm text-muted-foreground">{item.period}</span>
+          <div className="flex items-center gap-3">
+            {item.websiteUrl && (
+              <a 
+                href={item.websiteUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                title="Visit website"
+              >
+                External Link
+              </a>
+            )}
+            <span className="text-sm text-muted-foreground">{item.period}</span>
+          </div>
         </div>
       </CardHeader>
       <CardContent>
