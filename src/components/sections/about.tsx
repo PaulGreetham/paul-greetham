@@ -17,7 +17,7 @@ export function AboutSection() {
   const mainTechnologies = [
     "Next.js", "Expo", "React", "Angular", "TypeScript", "Node.js", 
     "Tailwind CSS", "Shadcn", "MUI", "SCSS", "Docker", "Jest", "Cypress", "Vercel", 
-    "Github", "Gitlab", "Figma", "Supabase", "Youtube", "Axios", "CSS", "OpenAI"
+    "Github", "Gitlab", "Figma", "Supabase", "Youtube", "Axios", "CSS", "OpenAI", "RxJS"
   ]
 
   // Create tech string with icons

@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { techIcons, type TechIcon } from "@/config/tech-icons"
 import { motion } from "motion/react"
+import { LinkButton } from "@/components/ui/link-button"
 
 // Define the project type
 type Project = {
@@ -22,11 +23,12 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "My Game Weather",
-    description: "Weather app for football fans",
-    details: "The most advanced football weather app ever created. How's the weather at YOUR game? On iOS and Android.",
-    technologies: ["Expo", "Next.js", "Supabase", "React Native", "TypeScript", "Tailwind CSS", "MapTiler", "iOS", "Android"].map(tech => techIcons[tech]),
-    projectUrl: "https://www.mgw.football/",
+    title: "Clinical Trials",
+    description: "Streamline clinical trial management",
+    details: "Access the latest information on clinical trials, making it easier to find relevant studies and track their progress.",
+    technologies: ["Angular", "TypeScript", "SCSS", "RxJS", "Jest", "Vercel"].map(tech => techIcons[tech]),
+    projectUrl: "https://clinical-trial-five.vercel.app/home",
+    githubUrl: "https://github.com/PaulGreetham/clinical-trial"
   },
   {
     id: 2,
@@ -48,10 +50,10 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "The Beautiful Beatiful Game",
+    title: "The Beautiful Game",
     description: "AI-powered footballer biographies",
     details: "An application that generates football player biographies in the style of famous authors using AI.",
-    technologies: ["OpenAI", "Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
+    technologies: ["OpenAI", "Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
     projectUrl: "https://the-beautiful-beautiful-game.vercel.app/",
     githubUrl: "https://github.com/PaulGreetham/the-beautiful-beautiful-game"
   },
@@ -134,29 +136,20 @@ export function ProjectsSection() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-between">
-                    {project.id === 1 ? (
-                      <span className="text-sm text-muted-foreground">
-                        To be released April &apos;25.
-                      </span>
-                    ) : (
-                      <>
-                        <a 
-                          href={project.projectUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-sm underline"
-                        >
-                          View Project
-                        </a>
-                        <a 
-                          href={project.githubUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="text-sm underline"
-                        >
-                          GitHub
-                        </a>
-                      </>
+                    <LinkButton 
+                      href={project.projectUrl}
+                      title="View live project"
+                    >
+                      View Project
+                    </LinkButton>
+                    
+                    {project.githubUrl && (
+                      <LinkButton 
+                        href={project.githubUrl}
+                        title="View source code"
+                      >
+                        GitHub
+                      </LinkButton>
                     )}
                   </CardFooter>
                 </Card>
