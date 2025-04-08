@@ -47,7 +47,7 @@ export const experienceData: ExperienceCategory[] = [
               "Added a new UI library, ShadCn, into the existing UI library to modernise an uninspiring UI."
             ],
             technologies: ["Next.js", "React", "TypeScript", "Node.js", "Tailwind", "ShadCn", "MapBox", "GeoJson", "GitHub", "Docker"],
-            websiteUrl: "https://ridecheck.app/"
+            websiteUrl: "https://ridecheck.app/en"
           }
         ]
       },
@@ -72,7 +72,7 @@ export const experienceData: ExperienceCategory[] = [
               "Worked with the design team to ensure the UI was up to standard and adhered to the brand guidelines."
             ],
             technologies: ["Next.js", "Angular", "TypeScript", "Node.js", "HTML", "SCSS", "GitLab", "Cypress", "Jest"],
-            websiteUrl: "https://www.risk-challenger.com/"
+            websiteUrl: "https://www.riskchallenger.nl/"
           }
         ]
       },
@@ -97,7 +97,6 @@ export const experienceData: ExperienceCategory[] = [
               "Successfully raised €550k in capital investment to fuel business growth from private investors."
             ],
             technologies: ["Business Development", "Brand Management", "Team Leadership", "Financial Management", "Marketing", "Operations"],
-            websiteUrl: "https://beatnikzrepublic.com/"
           }
         ]
       }
@@ -155,7 +154,6 @@ export const experienceData: ExperienceCategory[] = [
               "Designed intuitive user interface making complex transfer information accessible and engaging."
             ],
             technologies: ["React Native", "Expo", "TypeScript", "Node.js", "Tailwind", "GitHub", "Docker", "OpenAI API"],
-            websiteUrl: "https://transferai.app/"
           }
         ]
       },
@@ -181,7 +179,6 @@ export const experienceData: ExperienceCategory[] = [
               "Designed responsive and intuitive user experience making sophisticated prediction data easy to understand and act upon."
             ],
             technologies: ["React Native", "Expo", "TypeScript", "Node.js", "Tailwind", "GitHub", "Docker", "Data Visualization"],
-            websiteUrl: "https://scorepredictor.app/"
           }
         ]
       },
@@ -291,7 +288,7 @@ export const experienceData: ExperienceCategory[] = [
               "Angular (The Complete Guide 2023)",
             ],
             technologies: ["Angular", "TypeScript", "RxJS", "NgRx", "Material Design"],
-            websiteUrl: "https://www.udemy.com/courses/development/angular/"
+            websiteUrl: "https://www.udemy.com/course/the-complete-guide-to-angular-2/"
           }
         ]
       },
@@ -332,7 +329,7 @@ export const experienceData: ExperienceCategory[] = [
               "CSS",
               "Responsive Design"
             ],
-            websiteUrl: "https://www.codecademy.com/learn/paths/web-development"
+            websiteUrl: "https://www.codecademy.com"
           }
         ]
       },
@@ -357,7 +354,7 @@ export const experienceData: ExperienceCategory[] = [
               "Critial film theory and the role of literature in film and media.",
             ],
             technologies: ["English Literature", "Language", "Critical Analysis", "Writing", "Critial Reading", "Group Work", "Presentation Skills", "Public Speaking"],
-            websiteUrl: "https://www.mmu.ac.uk/study/undergraduate/course/ba-english-literature-and-language"
+            websiteUrl: "https://www.mmu.ac.uk/study/undergraduate/course/ba-english"
           }
         ]
       },
