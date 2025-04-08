@@ -32,7 +32,8 @@ import {
   SiDocker,
   SiJest,
   SiCypress,
-  SiSass
+  SiSass,
+  SiReactivex
 } from 'react-icons/si'
 
 export type TechIcon = {
@@ -176,5 +177,9 @@ export const techIcons: { [key: string]: TechIcon } = {
   "SCSS": {
     name: "SCSS",
     icon: SiSass
+  },
+  "RxJS": {
+    name: "RxJS",
+    icon: SiReactivex
   }
 } as const 
