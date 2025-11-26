@@ -49,14 +49,14 @@ export function AboutSection() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>Why tech?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  I built the websites for the UK businesses, including Stripe integration for UK-wide online beer sales. I developed the artwork of the businesses and wanted to move into a role where I could combine creativity and functionality. The transition to tech was a natural progression as I found myself increasingly drawn to the technical aspects of running the business. During the pandemic, I took the opportunity to formally transition into tech, completing an intensive bootcamp at Le Wagon Amsterdam and the School of Applied Technology, and securing my first role as a Frontend Developer. This career change has allowed me to merge my creative background with technical problem-solving.
+                  I built the websites for the UK businesses, including Stripe integration for UK-wide online beer sales. I developed the artwork of the businesses and wanted to move into a role where I could combine creativity and functionality. The transition to tech was a natural progression as I found myself increasingly drawn to the technical aspects of running the business. During the pandemic, I took the opportunity to formally transition into tech, completing an intensive bootcamp at Le Wagon Amsterdam and the School of Applied Technology, and securing my first role as a Software Developer. This career change has allowed me to merge my creative background with technical problem-solving.
                 </AccordionContent>
               </AccordionItem>
               
               <AccordionItem value="item-3">
                 <AccordionTrigger>Preferred stack?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  I have used Angular and TypeScript extensively in my professional work, but I am currently using React and this is my preference. I have built all of my personal projects using React and for my only commercial project, I have used my preferred stack of Next.js, React, TypeScript, Tailwind and Supabase, using Expo to deploy on iOS and Android. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies and currently exploring more advanced features of Next.js and React Server Components.
+                  I have mostly used TypeScript with Angular and React. I have built my personal projects using a combintation of React, Expo, Next.js, Node, Firebase, Tailwind and ShadCn. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies and currently exploring more advanced features of Next.js and React Server Components.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

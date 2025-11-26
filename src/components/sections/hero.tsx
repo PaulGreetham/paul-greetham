@@ -23,7 +23,7 @@ export function HeroSection() {
           {words.map((word, i) => (
             <div key={i} className="w-full md:w-auto md:mr-2">
               {word.split('').map((char, j) => {
-                const delay = (charCount + j) * 0.05;
+                const delay = (charCount + j) * 0.025;
                 return (
                   <motion.span
                     key={j}
@@ -51,7 +51,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className={cn(typography.h2, "text-muted-foreground mb-2 md:mb-4 text-left md:text-center")}
           >
-            Frontend Developer
+            Software Developer
           </motion.h2>
           <motion.h2 
             initial={{ opacity: 0, y: -30 }}
@@ -66,9 +66,9 @@ export function HeroSection() {
       <div className="relative z-10">
         <TextReveal 
           text={`
-          I'm a Frontend Developer & Former Founder with a passion for UI.
+          I'm a Software Developer & Former Founder. 
           I build scalable web and mobile applications.
-          Let's create something amazing together.
+          Let's build something amazing together.
           `}
         />
       </div>

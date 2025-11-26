@@ -27,6 +27,31 @@ export const experienceData: ExperienceCategory[] = [
     label: "Professional",
     subcategories: [
       {
+        id: "swydo",
+        label: "Swydo",
+        items: [
+          {
+            id: 1,
+            title: "Software Developer",
+            organization: "Swydo",
+            location: "Hilversum, NL",
+            period: "March 2025 - Present",
+            companyDescription: [
+              "Swydo is a SaaS platform for automated reporting and monitoring for online marketers. Swydo was launched in 2011 to make marketers’ lives easier by automating their reporting processes with a platform that’s easy to use, flexible and scalable."
+            ],
+            duties: [
+              "Maintained integrations with over 30 ad networks and platforms, including Google Ads, Facebook Ads, LinkedIn Ads, and Bing Ads.",
+              "Created new integration from scratch for ActiveCampaign, a marketing automation platform.",
+              "Worked through over 100 tickets fixing various bugs and issues related to the integrations.",
+              "Researched the feasibility of adding new customer feature requests and presented the findings to the team.",
+              "Code reviewed pull requests and provided feedback to ensure code quality and consistency.",
+            ],
+            technologies: ["TypeScript", "React", "Node.js", "GitHub", "Docker", "MongoDB"],
+            websiteUrl: "https://www.swydo.com/"
+          }
+        ]
+      },
+      {
         id: "check-technologies",
         label: "Check Technologies",
         items: [
@@ -35,7 +60,7 @@ export const experienceData: ExperienceCategory[] = [
             title: "Frontend Developer",
             organization: "Check Technologies",
             location: "Amsterdam, NL",
-            period: "October 2024 - Present",
+            period: "October 2024 - April 2025",
             companyDescription: [
               "Check is a start-up specialising in shared-mobility (mopeds and cars) within the Netherlands. It is a high volume usage (20m+ trips) app that aims to redefine an industry."
             ],
@@ -57,7 +82,7 @@ export const experienceData: ExperienceCategory[] = [
         items: [
           {
             id: 2,
-            title: "Frontend Developer",
+            title: "Software Developer",
             organization: "RiskChallenger",
             location: "Amersfoort, NL",
             period: "April 2023 - September 2024",
@@ -100,88 +125,6 @@ export const experienceData: ExperienceCategory[] = [
           }
         ]
       }
-    ]
-  },
-  {
-    id: "my-apps",
-    label: "My Apps",
-    subcategories: [
-      {
-        id: "my-game-weather",
-        label: "My Game Weather",
-        items: [
-          {
-            id: 4,
-            title: "Founder & Sole Developer",
-            organization: "My Game Weather",
-            location: "Hilversum, NL",
-            period: "October 2024 - Present",
-            companyDescription: [
-              "A mobile application bridging sports fixtures and weather forecasting, helping fans prepare for match days with detailed, location-specific weather information for their team's upcoming fixtures."
-            ],
-            duties: [
-              "Developed team management system allowing users to search, select and track favorite team.",
-              "Created interactive weather visualization features including maps with wind, temperature and precipitation overlays.",
-              "Implemented detailed charts showing temperature trends and weather metrics throughout match day.",
-              "Built notification system with customizable weather alerts for specific matches.",
-              "Designed tiered membership system with universal free access and premium supporter options.",
-              "Optimized user experience with dark/light themes, responsive design, custom animations and intuitive navigation."
-            ],
-            technologies: ["React Native", "Expo", "TypeScript", "Node.js", "Tailwind", "GitHub", "Docker"],
-            websiteUrl: "https://www.mgw.football/"
-          }
-        ]
-      },
-      {
-        id: "transfer-ai",
-        label: "Transfer AI",
-        items: [
-          {
-            id: 5,
-            title: "Founder & Sole Developer",
-            organization: "Transfer AI",
-            location: "Hilversum, NL",
-            period: "In Production",
-            companyDescription: [
-              "A mobile application aggregating football transfer gossip into a personalized newsfeed, with AI-powered analysis of transfer suitability based on player statistics, team fit, and historical data."
-            ],
-            duties: [
-              "Developed comprehensive newsfeed integrating multiple football news APIs to collect and display transfer rumors.",
-              "Built personalized notification system allowing users to receive alerts for their favorite teams.",
-              "Integrated OpenAI API to analyze potential transfers and provide intelligent assessments of player suitability.",
-              "Created algorithm evaluating transfers based on player statistics, previous experience, and team attributes.",
-              "Implemented filterable news feed with custom categorization of transfer reliability and relevance.",
-              "Designed intuitive user interface making complex transfer information accessible and engaging."
-            ],
-            technologies: ["React Native", "Expo", "TypeScript", "Node.js", "Tailwind", "GitHub", "Docker", "OpenAI API"],
-          }
-        ]
-      },
-      {
-        id: "score-predictor",
-        label: "Score Predictor",
-        items: [
-          {
-            id: 6,
-            title: "Founder & Sole Developer",
-            organization: "Score Predictor",
-            location: "Hilversum, NL",
-            period: "In Production",
-            companyDescription: [
-              "A football score prediction app that analyzes comprehensive match data to forecast game outcomes, while cross-referencing predictions with betting odds to identify the most favorable betting opportunities."
-            ],
-            duties: [
-              "Integrated multiple football data APIs to collect and analyze team statistics, historical performance, and win probability ratios.",
-              "Developed prediction algorithms combining historical match data, team form, and other relevant factors to generate score forecasts.",
-              "Built comparison engine to cross-reference predicted outcomes with current betting odds across various bookmakers.",
-              "Created value identification system highlighting bets with the best win probability to odds ratio.",
-              "Implemented modern UI with interactive visualizations to present complex statistical data in an accessible format.",
-              "Designed responsive and intuitive user experience making sophisticated prediction data easy to understand and act upon."
-            ],
-            technologies: ["React Native", "Expo", "TypeScript", "Node.js", "Tailwind", "GitHub", "Docker", "Data Visualization"],
-          }
-        ]
-      },
     ]
   },
   {

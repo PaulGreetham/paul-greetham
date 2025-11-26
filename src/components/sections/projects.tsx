@@ -23,6 +23,30 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "IndieSuite",
+    description: "Micro-SaaS for creative indie freelancers",
+    details: "IndieSuite is a micro-SaaS for creative indie freelancers to manage their clients, projects, and invoices.",
+    technologies: ["Next.js", "React", "Node.js", "TypeScript", "Tailwind", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
+    projectUrl: "https://www.indiesuite.app/",
+  },
+  {
+    id: 2,
+    title: "Weivly",
+    description: "Weight & body-composition tracker",
+    details: "A cross‑platform weight and body‑composition tracker with analytics and insights.",
+    technologies: ["Expo", "React Native", "TypeScript", "Firebase", "NativeWind", "iOS"].map(tech => techIcons[tech]),
+    projectUrl: "https://www.weivly.com/",
+  },
+  {
+    id: 3,
+    title: "My Game Weather",
+    description: "Weather app for football fans",
+    details: "Weather app that allows fans to check the weather for their favourite football team's next game.",
+    technologies: ["Expo", "React Native", "TypeScript", "Firebase", "NativeWind", "iOS"].map(tech => techIcons[tech]),
+    projectUrl: "https://www.mgw.football/",
+  },
+  {
+    id: 4,
     title: "Clinical Trials",
     description: "Streamline clinical trial management",
     details: "Access the latest information on clinical trials, making it easier to find relevant studies and track their progress.",
@@ -31,7 +55,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/PaulGreetham/clinical-trial"
   },
   {
-    id: 2,
+    id: 5,
     title: "Check It Out",
     description: "Optimise moped maintenance routes",
     details: "A web application designed to optimize moped maintenance routes and visualize Amsterdam's neighborhoods.",
@@ -40,7 +64,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/PaulGreetham/check-it-out"
   },
   {
-    id: 3,
+    id: 6,
     title: "Vitalized-FS",
     description: "Listed company financial statements",
     details: "Built for investors, analysts, and finance professionals who need quick access to key financial metrics and statements.",
@@ -48,33 +72,6 @@ const projects: Project[] = [
     projectUrl: "https://vitalized-fs.vercel.app/",
     githubUrl: "https://github.com/PaulGreetham/vitalized-fs"
   },
-  {
-    id: 4,
-    title: "The Beautiful Game",
-    description: "AI-powered footballer biographies",
-    details: "An application that generates football player biographies in the style of famous authors using AI.",
-    technologies: ["OpenAI", "Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map(tech => techIcons[tech]),
-    projectUrl: "https://the-beautiful-beautiful-game.vercel.app/",
-    githubUrl: "https://github.com/PaulGreetham/the-beautiful-beautiful-game"
-  },
-  {
-    id: 5,
-    title: "Workout Warrior",
-    description: "Personal workout companion",
-    details: "Workout Warrior allows users to search for exercise inspiration, log their gains, and watch workout videos from YouTube.",
-    technologies: ["Youtube", "React", "Node.js", "JavaScript", "CSS", "Axios", "Netlify"].map(tech => techIcons[tech]),
-    projectUrl: "https://workout-warrior.netlify.app/",
-    githubUrl: "https://github.com/PaulGreetham/workout-warrior"
-  },
-  {
-    id: 6,
-    title: "Found + Ground",
-    description: "Coffee blog",
-    details: "Coffee blog showcasing the latest trends and expert insights, making it an essential resource for coffee enthusiasts.",
-    technologies: ["React", "Node.js", "TypeScript", "CSS", "Netlify"].map(tech => techIcons[tech]),
-    projectUrl: "https://found-and-ground.netlify.app/",
-    githubUrl: "https://github.com/PaulGreetham/found-and-ground"
-  }
 ]
 
 export function ProjectsSection() {

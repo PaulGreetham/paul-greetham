@@ -82,6 +82,10 @@ export const techIcons: { [key: string]: TechIcon } = {
     name: "Tailwind",
     icon: SiTailwindcss
   },
+  "Tailwind": {
+    name: "Tailwind",
+    icon: SiTailwindcss
+  },
   "Stripe": {
     name: "Stripe",
     icon: SiStripe
@@ -101,6 +105,10 @@ export const techIcons: { [key: string]: TechIcon } = {
   "Expo": {
     name: "Expo",
     icon: SiExpo
+  },
+  "NativeWind": {
+    name: "NativeWind",
+    icon: SiTailwindcss
   },
   "React Native": {
     name: "React Native",
