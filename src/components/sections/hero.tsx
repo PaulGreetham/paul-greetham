@@ -68,7 +68,7 @@ export function HeroSection() {
           text={`
           I'm a Software Developer & Former Founder. 
           I build scalable web and mobile applications.
-          Let's build something amazing together.
+          Let's build something amazing.
           `}
         />
       </div>
