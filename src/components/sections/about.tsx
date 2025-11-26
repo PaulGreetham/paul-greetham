@@ -56,7 +56,7 @@ export function AboutSection() {
               <AccordionItem value="item-3">
                 <AccordionTrigger>Preferred stack?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  I have mostly used TypeScript with Angular and React. I have built my personal projects using a combintation of React, Expo, Next.js, Node, Firebase, Tailwind and ShadCn. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies and currently exploring more advanced features of Next.js and React Server Components.
+                  I have mostly used TypeScript with Angular and React. I have built my personal projects using a combintation of React, Expo, Next.js, Node, Firebase, Tailwind and ShadCn. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
