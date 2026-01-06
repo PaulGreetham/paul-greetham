@@ -43,7 +43,7 @@ const projects: Project[] = [
     description: "Weather app for football fans",
     details: "Weather app that allows fans to check the weather for their favourite football team's next game.",
     technologies: ["Expo", "React Native", "TypeScript", "Firebase", "NativeWind", "iOS"].map(tech => techIcons[tech]),
-    projectUrl: "https://www.mgw.football/",
+    projectUrl: "https://my-game-weather.vercel.app/",
   },
   {
     id: 4,
