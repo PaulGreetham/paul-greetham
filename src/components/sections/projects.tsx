@@ -31,6 +31,23 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Crystal Football",
+    description: "Football predictions & insights app",
+    details: "A mobile app for football fans to view match predictions, track results, and get insights on upcoming fixtures.",
+    technologies: ["Expo", "React Native", "TypeScript", "Firebase", "NativeWind", "iOS"].map(tech => techIcons[tech]),
+    projectUrl: "https://apps.apple.com/nl/app/crystal-football/id6748298242",
+  },
+  {
+    id: 3,
+    title: "WattXchange",
+    description: "Energy production monitoring dashboard",
+    details: "An internal dashboard for monitoring solar and wind energy production across multiple parks with interactive charts and data tables.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind", "Shadcn", "Jest"].map(tech => techIcons[tech]),
+    projectUrl: "https://main.d15sa22sfveukv.amplifyapp.com/",
+    githubUrl: "https://github.com/PaulGreetham/wattxchange"
+  },
+  {
+    id: 4,
     title: "Weivly",
     description: "Weight & body-composition tracker",
     details: "A cross‑platform weight and body‑composition tracker with analytics and insights.",
@@ -38,7 +55,7 @@ const projects: Project[] = [
     projectUrl: "https://www.weivly.com/",
   },
   {
-    id: 3,
+    id: 5,
     title: "My Game Weather",
     description: "Weather app for football fans",
     details: "Weather app that allows fans to check the weather for their favourite football team's next game.",
@@ -46,7 +63,7 @@ const projects: Project[] = [
     projectUrl: "https://my-game-weather.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Clinical Trials",
     description: "Streamline clinical trial management",
     details: "Access the latest information on clinical trials, making it easier to find relevant studies and track their progress.",
@@ -55,7 +72,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/PaulGreetham/clinical-trial"
   },
   {
-    id: 5,
+    id: 7,
     title: "Check It Out",
     description: "Optimise moped maintenance routes",
     details: "A web application designed to optimize moped maintenance routes and visualize Amsterdam's neighborhoods.",
@@ -64,7 +81,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/PaulGreetham/check-it-out"
   },
   {
-    id: 6,
+    id: 8,
     title: "Vitalized-FS",
     description: "Listed company financial statements",
     details: "Built for investors, analysts, and finance professionals who need quick access to key financial metrics and statements.",
