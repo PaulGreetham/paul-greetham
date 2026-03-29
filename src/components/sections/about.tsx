@@ -3,7 +3,6 @@
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
-import { techIcons } from "@/config/tech-icons"
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity"
 import { motion } from "motion/react"
 import {
@@ -17,14 +16,11 @@ export function AboutSection() {
   const mainTechnologies = [
     "Next.js", "Expo", "React", "Angular", "TypeScript", "Node.js", 
     "Tailwind CSS", "Shadcn", "MUI", "SCSS", "Docker", "Jest", "Cypress", "Vercel", 
-    "Github", "Gitlab", "Figma", "Supabase", "Youtube", "Axios", "CSS", "OpenAI", "RxJS"
+    "Github", "Gitlab", "Figma", "Supabase", "Youtube", "Axios", "CSS", "OpenAI", "RxJS",
+    "RevenueCat", "Firebase", "Mapbox", "GeoJSON", "Stripe", "MongoDB",
   ]
 
-  // Create tech string with icons
-  const techString = mainTechnologies.map(tech => {
-    const icon = techIcons[tech]
-    return `${icon.name} `
-  }).join(' • ') + ' • '
+  const techString = mainTechnologies.join(" • ") + " • "
 
   return (
     <section id="about" className="section-shell">
@@ -37,9 +33,6 @@ export function AboutSection() {
         >
           <div className="glass-chip">About</div>
           <h2 className={cn(typography.h2, "mx-auto max-w-2xl")}>About Me</h2>
-          <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
-            A little more about my background, why I moved into tech, and the stack I enjoy building with.
-          </p>
         </motion.div>
 
         <motion.div
