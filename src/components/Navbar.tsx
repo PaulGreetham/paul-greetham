@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { ThemeToggle } from "./theme-toggle"
 import { typography } from "@/lib/typography"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -52,10 +51,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
-            <ThemeToggle />
-          </div>
-
           <button
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-card/70 md:hidden"
             onClick={() => setIsOpen(!isOpen)}
@@ -85,9 +80,6 @@ const Navbar = () => {
                   {item.label}
                 </Button>
               ))}
-              <div className="px-2 pt-2">
-                <ThemeToggle />
-              </div>
             </div>
           </div>
         )}

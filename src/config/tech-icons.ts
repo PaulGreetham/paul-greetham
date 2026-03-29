@@ -5,19 +5,13 @@ import {
   SiReact,
   SiTypescript,
   SiNodedotjs,
-  SiMongodb,
   SiFirebase,
-  SiVuedotjs,
   SiAngular,
   SiTailwindcss,
-  SiStripe,
-  SiRedux,
   SiVercel,
   SiNetlify,
   SiExpo,
   SiApple,
-  SiAndroid,
-  SiMaptiler,
   SiMapbox,
   SiMui,
   SiShadcnui,
@@ -25,7 +19,6 @@ import {
   SiYoutube,
   SiAxios,
   SiCss3,
-  SiJavascript,
   SiOpenai,
   SiGithub,
   SiGitlab,
@@ -65,25 +58,13 @@ export const techIcons: { [key: string]: TechIcon } = {
     name: "TypeScript",
     icon: SiTypescript
   },
-  "JavaScript": {
-    name: "JavaScript",
-    icon: SiJavascript
-  },
   "Node.js": {
     name: "Node.js",
     icon: SiNodedotjs
   },
-  "MongoDB": {
-    name: "MongoDB",
-    icon: SiMongodb
-  },
   "Firebase": {
     name: "Firebase",
     icon: SiFirebase
-  },
-  "Vue.js": {
-    name: "Vue.js",
-    icon: SiVuedotjs
   },
   "Angular": {
     name: "Angular",
@@ -96,14 +77,6 @@ export const techIcons: { [key: string]: TechIcon } = {
   "Tailwind": {
     name: "Tailwind",
     icon: SiTailwindcss
-  },
-  "Stripe": {
-    name: "Stripe",
-    icon: SiStripe
-  },
-  "Redux": {
-    name: "Redux",
-    icon: SiRedux
   },
   "Vercel": {
     name: "Vercel",
@@ -128,14 +101,6 @@ export const techIcons: { [key: string]: TechIcon } = {
   "iOS": {
     name: "iOS",
     icon: SiApple
-  },
-  "Android": {
-    name: "Android",
-    icon: SiAndroid
-  },
-  "MapTiler": {
-    name: "MapTiler",
-    icon: SiMaptiler
   },
   "Mapbox": {
     name: "Mapbox",
