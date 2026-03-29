@@ -25,17 +25,23 @@ export function ExperienceSection() {
   // const [activeCategory, setActiveCategory] = useState(experienceData[0].id)
 
   return (
-    <section id="experience" className="relative min-h-screen flex flex-col items-center bg-background py-24 px-4 sm:px-8 md:px-24">
-      <div className="z-10 w-full max-w-6xl">
-        <h2 className={cn(typography.h2, "text-center mb-8")}>Experience</h2>
+    <section id="experience" className="section-shell">
+      <div className="section-frame">
+        <div className="mb-8 space-y-4 text-center">
+          <div className="glass-chip">Experience</div>
+          <h2 className={cn(typography.h2, "text-center")}>Experience</h2>
+          <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
+            A mix of product, engineering, and founder experience across web and mobile software.
+          </p>
+        </div>
         
         <Tabs defaultValue={experienceData[0].id} className="w-full">
-          <TabsList className="w-full justify-start mb-8 overflow-x-auto">
+          <TabsList className="mb-8 h-auto w-full justify-start gap-2 overflow-x-auto rounded-full border border-border/70 bg-card/70 p-2">
             {experienceData.map((category) => (
               <TabsTrigger 
                 key={category.id} 
                 value={category.id}
-                className="min-w-fit"
+                className="min-w-fit rounded-full"
               >
                 {category.label}
               </TabsTrigger>
@@ -49,9 +55,9 @@ export function ExperienceSection() {
                   {/* Only show nested tabs on md and larger screens */}
                   <div className="hidden md:block">
                     <Tabs defaultValue={category.subcategories[0].id} className="w-full">
-                      <TabsList className="w-full justify-start mb-6">
+                      <TabsList className="mb-6 h-auto w-full justify-start gap-2 rounded-full border border-border/70 bg-card/60 p-2">
                         {category.subcategories.map((sub) => (
-                          <TabsTrigger key={sub.id} value={sub.id}>
+                          <TabsTrigger key={sub.id} value={sub.id} className="rounded-full">
                             {sub.label}
                           </TabsTrigger>
                         ))}
@@ -93,7 +99,7 @@ export function ExperienceSection() {
       </div>
 
       <DotPattern 
-        className="[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
+        className="opacity-60 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
         width={16}
         height={16}
         cx={1}
@@ -106,53 +112,53 @@ export function ExperienceSection() {
 
 function ExperienceCard({ item }: { item: ExperienceItem }) {
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <CardHeader>
-        <div className="flex justify-between items-start">
-          <div>
-            <CardTitle>{item.title}</CardTitle>
+        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+          <div className="space-y-2">
+            <CardTitle className="text-xl md:text-2xl">{item.title}</CardTitle>
             <CardDescription>{item.organization} | {item.location}</CardDescription>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             {item.websiteUrl && (
               <a 
                 href={item.websiteUrl} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="px-2 py-1 text-xs font-medium rounded-md bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+                className="inline-flex items-center justify-center rounded-full border border-border/70 bg-card/80 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
                 title="Visit website"
               >
                 External Link
               </a>
             )}
-            <span className="text-sm text-muted-foreground">{item.period}</span>
+            <span className="rounded-full border border-border/70 bg-card/60 px-3 py-1 text-sm text-muted-foreground">{item.period}</span>
           </div>
         </div>
       </CardHeader>
       <CardContent>
-        {/* Company description */}
         {item.companyDescription.map((desc, index) => (
-          <p key={index} className="mb-2 text-muted-foreground">
+          <p key={index} className="mb-2 text-sm leading-7 text-muted-foreground md:text-base">
             {desc}
           </p>
         ))}
         
-        {/* Duties/Responsibilities */}
         {item.duties.length > 0 && (
-          <ul className="list-disc list-inside space-y-2 mt-4">
+          <ul className="mt-4 space-y-2 text-sm leading-7 md:text-base">
             {item.duties.map((duty, index) => (
-              <li key={index}>{duty}</li>
+              <li key={index} className="flex gap-3">
+                <span className="mt-2 h-2 w-2 rounded-full bg-primary" />
+                <span>{duty}</span>
+              </li>
             ))}
           </ul>
         )}
         
-        {/* Technologies */}
         {item.technologies && (
           <div className="flex flex-wrap gap-2 mt-4">
             {item.technologies.map((tech) => (
               <span 
                 key={tech}
-                className="px-2 py-1 bg-primary/10 text-primary rounded-md text-sm"
+                className="rounded-full border border-border/70 bg-card/70 px-3 py-1 text-sm text-muted-foreground"
               >
                 {tech}
               </span>

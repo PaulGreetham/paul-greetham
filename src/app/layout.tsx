@@ -1,13 +1,19 @@
 import "./globals.css"
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import { ThemeProvider } from "@/components/theme-provider"
 
-const poppins = Poppins({ 
-  weight: ['400', '500', '600', '700'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-sans',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-display',
 })
 
 export const metadata: Metadata = {
@@ -22,14 +28,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={poppins.className}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="min-h-screen bg-background antialiased">
+          <main className="relative min-h-screen overflow-x-hidden bg-background antialiased">
             <Navbar />
             {children}
           </main>
