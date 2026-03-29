@@ -24,7 +24,7 @@ export const projectsData: Project[] = [
     title: "Crystal Football",
     description: "Football predictions & insights app",
     details: "A mobile app for football fans to view match predictions, track results, and get insights on upcoming fixtures.",
-    technologies: ["Expo", "React Native", "TypeScript", "Firebase", "RevenueCat", "NativeWind", "iOS"].map((tech) => techIcons[tech]),
+    technologies: ["Expo", "React Native", "TypeScript", "Firebase", "NativeWind", "iOS"].map((tech) => techIcons[tech]),
     projectUrl: "https://apps.apple.com/nl/app/crystal-football/id6748298242",
   },
   {
@@ -78,5 +78,14 @@ export const projectsData: Project[] = [
     technologies: ["Next.js", "React", "Node.js", "TypeScript", "Tailwind CSS", "Shadcn", "Vercel"].map((tech) => techIcons[tech]),
     projectUrl: "https://vitalized-fs.vercel.app/",
     githubUrl: "https://github.com/PaulGreetham/vitalized-fs"
+  },
+  {
+    id: 9,
+    title: "Portfolio App",
+    description: "Personal developer portfolio website",
+    details: "A modern portfolio website built to showcase experience, projects, and contact details with a polished UI and responsive layout.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind", "Shadcn", "Vercel"].map((tech) => techIcons[tech]),
+    projectUrl: "/",
+    githubUrl: "https://github.com/PaulGreetham/paul-greetham",
   },
 ]
