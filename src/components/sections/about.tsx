@@ -45,7 +45,7 @@ export function AboutSection() {
             <AccordionItem value="item-1">
               <AccordionTrigger>My background?</AccordionTrigger>
               <AccordionContent className="text-left text-muted-foreground">
-                I&apos;m from the UK where I ran a successful brewery and hospitality business for many years in Manchester. Due to COVID and Brexit, these businesses were sold or closed and I&apos;ve been in the Netherlands for nearly 3 years. During my time in Manchester, I built Beatnikz Republic from the ground up, starting as a small craft brewery and expanding into a successful taproom in the city centre. This experience gave me invaluable insights into business operations, customer service, and the importance of adapting to changing market conditions.
+                I&apos;m from the UK where I ran a successful brewery and hospitality business for many years in Manchester. Due to COVID and Brexit, these businesses were sold or closed and I&apos;ve been in the Netherlands for nearly 4 years. During my time in Manchester, I built Beatnikz Republic from the ground up, starting as a small craft brewery and expanding into a successful taproom in the city centre. This experience gave me invaluable insights into business operations, customer service, and the importance of adapting to changing market conditions.
               </AccordionContent>
             </AccordionItem>
             
@@ -59,7 +59,7 @@ export function AboutSection() {
             <AccordionItem value="item-3">
               <AccordionTrigger>Preferred stack?</AccordionTrigger>
               <AccordionContent className="text-left text-muted-foreground">
-                I have mostly used TypeScript with Angular and React. I have built my personal projects using a combintation of React, Expo, Next.js, Node, Firebase, Tailwind and ShadCn. I&apos;m particularly passionate about creating responsive, accessible, and performant web applications. My experience with both Angular and React has given me a deep understanding of component-based architecture and state management. I&apos;m always eager to learn new technologies.
+                My strongest stack is TypeScript across both web and mobile, working mainly with React, Next.js, Angular, Expo and React Native. Across my projects, I&apos;ve built SaaS products, internal dashboards, data-heavy interfaces and consumer mobile apps using combinations of Node.js, Firebase, Tailwind, Shadcn, SCSS, Jest and Cypress, as well as integrating services like RevenueCat and Stripe where subscription and payment flows are needed. That includes everything from polished portfolio and finance platforms to energy monitoring dashboards and football-focused mobile products. I&apos;m particularly focused on building products that feel modern, perform well, and scale cleanly, with strong attention to UI, maintainability, and component architecture.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
