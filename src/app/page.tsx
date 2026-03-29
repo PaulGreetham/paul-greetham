@@ -6,7 +6,7 @@ import { ContactSection } from "@/components/sections/contact"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="relative flex min-h-screen flex-col overflow-x-hidden bg-background antialiased">
       <HeroSection />
       <AboutSection />
       <ExperienceSection />

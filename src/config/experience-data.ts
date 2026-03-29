@@ -1,4 +1,4 @@
-type ExperienceItem = {
+export type ExperienceItem = {
   id: number
   title: string
   organization: string
@@ -10,7 +10,7 @@ type ExperienceItem = {
   websiteUrl?: string
 }
 
-type ExperienceCategory = {
+export type ExperienceCategory = {
   id: string
   label: string
   subcategories?: {
@@ -35,7 +35,7 @@ export const experienceData: ExperienceCategory[] = [
             title: "Software Developer",
             organization: "Swydo",
             location: "Hilversum, NL",
-            period: "March 2025 - Present",
+            period: "April 2025 - Present",
             companyDescription: [
               "Swydo is a SaaS platform for automated reporting and monitoring for online marketers. Swydo was launched in 2011 to make marketers’ lives easier by automating their reporting processes with a platform that’s easy to use, flexible and scalable."
             ],
@@ -56,7 +56,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "Check Technologies",
         items: [
           {
-            id: 1,
+            id: 2,
             title: "Frontend Developer",
             organization: "Check Technologies",
             location: "Amsterdam, NL",
@@ -81,7 +81,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "RiskChallenger",
         items: [
           {
-            id: 2,
+            id: 3,
             title: "Software Developer",
             organization: "RiskChallenger",
             location: "Amersfoort, NL",
@@ -106,7 +106,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "Beatnikz Republic Brewing Co.",
         items: [
           {
-            id: 3,
+            id: 4,
             title: "Founder",
             organization: "Beatnikz Republic Brewing Co.",
             location: "Manchester, UK",
@@ -136,7 +136,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "School of Applied Technology (SALT)",
         items: [
           {
-            id: 7,
+            id: 5,
             title: "Full-Stack Trainee Developer",
             organization: "School of Applied Technology (SALT)",
             location: "Amsterdam, NL",
@@ -161,7 +161,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "Le Wagon Amsterdam",
         items: [
           {
-            id: 8,
+            id: 6,
             title: "Software Engineering Bootcamp",
             organization: "Le Wagon",
             location: "Amsterdam, NL",
@@ -192,7 +192,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "UX Design Institute",
         items: [
           {
-            id: 9,
+            id: 7,
             title: "Professional Diploma in UI Design",
             organization: "UX Design Institute",
             location: "Remote",
@@ -219,7 +219,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "Udemy",
         items: [
           {
-            id: 10,
+            id: 8,
             title: "Angular Development",
             organization: "Udemy",
             location: "Remote",
@@ -240,7 +240,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "Codecademy",
         items: [
           {
-            id: 11,
+            id: 9,
             title: "Web Development Path",
             organization: "Codecademy",
             location: "Remote",
@@ -281,7 +281,7 @@ export const experienceData: ExperienceCategory[] = [
         label: "University",
         items: [
           {
-            id: 12,
+            id: 10,
             title: "BA (Hons) English Literature & Language",
             organization: "Manchester Metropolitan University",
             location: "Manchester, UK",

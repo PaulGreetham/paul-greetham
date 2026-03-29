@@ -1,29 +1,13 @@
 "use client"
 
-// import { useState } from "react"
 import { DotPattern } from "@/components/ui/dot-pattern"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { experienceData } from "@/config/experience-data"
-
-// Define types for our experience data
-type ExperienceItem = {
-  id: number
-  title: string
-  organization: string
-  location: string
-  period: string
-  companyDescription: string[]
-  duties: string[]
-  technologies?: string[]
-  websiteUrl?: string
-}
+import { experienceData, type ExperienceItem } from "@/config/experience-data"
 
 export function ExperienceSection() {
-  // const [activeCategory, setActiveCategory] = useState(experienceData[0].id)
-
   return (
     <section id="experience" className="section-shell">
       <div className="section-frame">
@@ -80,7 +64,7 @@ export function ExperienceSection() {
                     <div className="grid gap-6">
                       {category.subcategories.map((sub) => (
                         sub.items.map((item) => (
-                          <ExperienceCard key={item.id} item={item} />
+                          <ExperienceCard key={`${sub.id}-${item.id}`} item={item} />
                         ))
                       ))}
                     </div>

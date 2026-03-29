@@ -28,10 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
-        <main className="relative min-h-screen overflow-x-hidden bg-background antialiased">
-          <Navbar />
-          {children}
-        </main>
+        <Navbar />
+        {children}
       </body>
     </html>
   )
