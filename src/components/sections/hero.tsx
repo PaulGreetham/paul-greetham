@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col">
         <div className="section-frame overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,hsl(var(--glow-1)/0.22),transparent_32%),radial-gradient(circle_at_bottom_right,hsl(var(--glow-2)/0.18),transparent_30%)]" />
-          <div className="relative grid gap-10 lg:grid-cols-[minmax(0,1.45fr)_minmax(280px,0.75fr)] lg:items-end">
+          <div className="relative space-y-14 md:space-y-24">
             <div className="space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
@@ -28,7 +28,7 @@ export function HeroSection() {
                 transition={{ duration: 0.6, ease: [0.2, 0.65, 0.3, 0.9] }}
                 className={cn(
                   typography.h1,
-                  "max-w-4xl text-left leading-[1.02]"
+                  "max-w-none text-left leading-[1.02] lg:text-[5.5rem] lg:whitespace-nowrap xl:text-8xl"
                 )}
               >
                 <span className="bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
@@ -57,10 +57,10 @@ export function HeroSection() {
             </div>
 
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1"
+              className="grid gap-4 md:grid-cols-3"
             >
               <div className="glass-card p-5">
                 <p className="glass-chip mb-4">Products</p>
