@@ -14,9 +14,6 @@ export function ExperienceSection() {
         <div className="mb-8 space-y-4 text-center">
           <div className="glass-chip">Experience</div>
           <h2 className={cn(typography.h2, "text-center")}>Experience</h2>
-          <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
-            A mix of product, engineering, and founder experience across web and mobile software.
-          </p>
         </div>
         
         <Tabs defaultValue={experienceData[0].id} className="w-full">

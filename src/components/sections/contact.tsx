@@ -52,9 +52,6 @@ export function ContactSection() {
           <div className="mb-10 space-y-4 text-center">
             <div className="glass-chip">Contact</div>
             <h2 className={cn(typography.h2, "text-center")}>Let&apos;s Connect</h2>
-            <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
-              Reach out if you&apos;d like to collaborate, chat about product ideas, or discuss a role.
-            </p>
           </div>
 
           <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-6 md:gap-8">

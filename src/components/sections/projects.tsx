@@ -23,9 +23,6 @@ export function ProjectsSection() {
             <div className="space-y-4 text-center">
               <div className="glass-chip">Projects</div>
               <h2 className={cn(typography.h2, "text-center")}>Projects</h2>
-              <p className="mx-auto max-w-2xl text-sm leading-7 text-muted-foreground md:text-base">
-                A selection of web and mobile products, from internal dashboards to consumer-facing apps.
-              </p>
             </div>
           </motion.div>
 
