@@ -63,16 +63,25 @@ export function HeroSection() {
               className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1"
             >
               <div className="glass-card p-5">
-                <p className="glass-chip mb-4">Product</p>
-                <p className="text-2xl font-semibold">Saas + Mobile Apps</p>
-              </div>
-              <div className="glass-card p-5">
-                <p className="glass-chip mb-4">Background</p>
-                <p className="text-2xl font-semibold">Former Founder</p>
+                <p className="glass-chip mb-4">Products</p>
+                <div className="space-y-1.5">
+                  <p className="text-2xl font-semibold leading-tight">SaaS Platforms</p>
+                  <p className="text-2xl font-semibold leading-tight">Mobile Apps</p>
+                </div>
               </div>
               <div className="glass-card p-5">
                 <p className="glass-chip mb-4">Focus</p>
-                <p className="text-2xl font-semibold">MVP Creation</p>
+                <div className="space-y-1.5">
+                  <p className="text-2xl font-semibold leading-tight">MVP Creation</p>
+                  <p className="text-2xl font-semibold leading-tight">Frontend/Full-Stack</p>
+                </div>
+              </div>
+              <div className="glass-card p-5">
+                <p className="glass-chip mb-4">Background</p>
+                <div className="space-y-1.5">
+                  <p className="text-2xl font-semibold leading-tight">Former Founder</p>
+                  <p className="text-2xl font-semibold leading-tight">Customer Centric</p>
+                </div>
               </div>
             </motion.div>
           </div>

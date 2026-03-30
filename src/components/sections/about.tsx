@@ -45,7 +45,7 @@ export function AboutSection() {
             <AccordionItem value="item-1">
               <AccordionTrigger>My background?</AccordionTrigger>
               <AccordionContent className="text-left text-muted-foreground">
-                I&apos;m from the UK where I ran a successful brewery and hospitality business for many years in Manchester. Due to COVID and Brexit, these businesses were sold or closed and I&apos;ve been in the Netherlands for nearly 4 years. During my time in Manchester, I built Beatnikz Republic from the ground up, starting as a small craft brewery and expanding into a successful taproom in the city centre. This experience gave me invaluable insights into business operations, customer service, and the importance of adapting to changing market conditions.
+                I&apos;m from the UK where I ran a successful brewery and hospitality business for many years in Manchester. Due to COVID and Brexit, these businesses were sold or closed and I&apos;ve been in the Netherlands for nearly 4 years. During my time in Manchester, I built Beatnikz Republic from the ground up, starting homebrewing in my small kitchen to growing the business into a £1.3m annual revenue business, exploying 25+ perople, creating three city-centre venues and exporitng to nine difffferent countries. This experience gave me invaluable insights into business operations, customer service, and the importance of adapting to changing market conditions.
               </AccordionContent>
             </AccordionItem>
             
