@@ -1,6 +1,5 @@
 "use client"
 
-import { DotPattern } from "@/components/ui/dot-pattern"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -79,14 +78,6 @@ export function ExperienceSection() {
         </Tabs>
       </div>
 
-      <DotPattern 
-        className="opacity-60 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
-        width={16}
-        height={16}
-        cx={1}
-        cy={1}
-        cr={1}
-      />
     </section>
   )
 }

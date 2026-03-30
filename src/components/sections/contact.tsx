@@ -2,7 +2,6 @@
 
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { DotPattern } from "@/components/ui/dot-pattern"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
 
@@ -70,14 +69,6 @@ export function ContactSection() {
           </div>
         </div>
 
-        <DotPattern 
-          className="opacity-60 [mask-image:radial-gradient(600px_circle_at_center,white,transparent)]"
-          width={16}
-          height={16}
-          cx={1}
-          cy={1}
-          cr={1}
-        />
       </section>
     </TooltipProvider>
   )
