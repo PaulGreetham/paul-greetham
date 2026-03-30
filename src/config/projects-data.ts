@@ -81,9 +81,9 @@ export const projectsData: Project[] = [
   },
   {
     id: 9,
-    title: "Portfolio App",
+    title: "Portfolio Website",
     description: "Personal developer portfolio website",
-    details: "A modern portfolio website built to showcase experience, projects, and contact details with a polished UI and responsive layout.",
+    details: "Portfolio website built to showcase experience, projects, and contact details with a polished responsive layout.",
     technologies: ["Next.js", "React", "TypeScript", "Tailwind", "Shadcn", "Vercel"].map((tech) => techIcons[tech]),
     projectUrl: "/",
     githubUrl: "https://github.com/PaulGreetham/paul-greetham",
