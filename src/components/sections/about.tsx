@@ -74,7 +74,7 @@ export function AboutSection() {
           <div className="text-center">
             <div className="glass-chip">Tech Stack</div>
           </div>
-          <div className="relative overflow-hidden rounded-[1.75rem] border border-border/70 bg-card/60 py-4 backdrop-blur-xl">
+          <div className="relative overflow-hidden rounded-[1.75rem] border border-border/85 bg-card/72 py-4 backdrop-blur-xl">
             <VelocityScroll defaultVelocity={1} numRows={2}>
               {techString}
             </VelocityScroll>

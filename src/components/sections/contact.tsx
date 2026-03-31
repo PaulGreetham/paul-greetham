@@ -19,7 +19,7 @@ function Circle({ className, children, href, tooltip }: CircleProps) {
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "z-10 flex size-24 items-center justify-center rounded-full border border-border/70 bg-card/80 p-3 shadow-[0_20px_60px_-24px_hsl(var(--shadow-color)/0.65)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-primary/40 hover:text-primary cursor-pointer",
+        "z-10 flex size-24 items-center justify-center rounded-full border border-border/85 bg-card/85 p-3 shadow-[0_20px_60px_-24px_hsl(var(--shadow-color)/0.65)] backdrop-blur-xl transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:text-primary cursor-pointer",
         className
       )}
     >

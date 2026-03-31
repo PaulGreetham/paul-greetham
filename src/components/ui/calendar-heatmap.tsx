@@ -10,11 +10,11 @@ type CalendarHeatmapProps = {
 }
 
 const heatmapClassNames = {
-  zero: "bg-[#161b22] border-[#2d333b]",
-  one: "bg-[#0e4429] border-[#0e4429]",
-  two: "bg-[#006d32] border-[#006d32]",
-  three: "bg-[#26a641] border-[#26a641]",
-  four: "bg-[#39d353] border-[#39d353]",
+  zero: "bg-white/70 border-border/80 dark:bg-[#161b22] dark:border-[#2d333b]",
+  one: "bg-[#c6edcf] border-[#b2dfbf] dark:bg-[#0e4429] dark:border-[#0e4429]",
+  two: "bg-[#93e0a5] border-[#79cf8e] dark:bg-[#006d32] dark:border-[#006d32]",
+  three: "bg-[#57cd72] border-[#43bb5f] dark:bg-[#26a641] dark:border-[#26a641]",
+  four: "bg-[#2cc84d] border-[#1cb33f] dark:bg-[#39d353] dark:border-[#39d353]",
 } as const
 
 const heatmapLegend = [
@@ -71,7 +71,7 @@ export function CalendarHeatmap({ data }: CalendarHeatmapProps) {
   return (
     <TooltipProvider>
       <div className="overflow-x-auto py-3">
-        <div className="min-w-[820px] rounded-[1.5rem] border border-border/70 bg-card/55 p-5 backdrop-blur-xl">
+        <div className="min-w-[820px] rounded-[1.5rem] border border-border/85 bg-card/68 p-5 backdrop-blur-xl">
           <div className="mb-3 grid grid-cols-[auto_1fr] gap-3">
             <div />
             <div className="grid" style={{ gridTemplateColumns: `repeat(${weeks.length}, minmax(0, 1fr))` }}>

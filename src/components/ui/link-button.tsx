@@ -11,7 +11,7 @@ export const LinkButton = React.forwardRef<HTMLAnchorElement, LinkButtonProps>(
       <a
         ref={ref}
         className={cn(
-          "inline-flex items-center justify-center rounded-full border border-border/70 bg-card/80 px-3 py-1.5 text-xs font-medium text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:bg-primary/10 hover:text-primary",
+          "inline-flex items-center justify-center rounded-full border border-border/85 bg-card/85 px-3 py-1.5 text-xs font-medium text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50 hover:bg-primary/10 hover:text-primary",
           className
         )}
         target="_blank"

@@ -52,7 +52,7 @@ export function ProjectsSection() {
                           <Tooltip key={tech.name}>
                             <TooltipTrigger asChild>
                               <div 
-                                className="flex h-10 w-10 items-center justify-center rounded-2xl border border-border/70 bg-card/80 text-lg text-primary transition-all duration-200 hover:border-primary/40 hover:bg-primary/10"
+                                className="flex h-10 w-10 items-center justify-center rounded-2xl border border-border/85 bg-card/85 text-lg text-primary transition-all duration-200 hover:border-primary/50 hover:bg-primary/10"
                               >
                                 <Icon />
                               </div>

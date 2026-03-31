@@ -2,6 +2,7 @@ import "./globals.css"
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,10 +27,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          storageKey="paul-greetham-theme"
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

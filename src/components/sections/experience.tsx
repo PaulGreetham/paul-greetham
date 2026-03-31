@@ -16,7 +16,7 @@ export function ExperienceSection() {
         </div>
         
         <Tabs defaultValue={experienceData[0].id} className="w-full">
-          <TabsList className="mb-8 h-auto w-full justify-start gap-2 overflow-x-auto rounded-full border border-border/70 bg-card/70 p-2">
+          <TabsList className="mb-8 h-auto w-full justify-start gap-2 overflow-x-auto rounded-full border border-border/85 bg-card/78 p-2">
             {experienceData.map((category) => (
               <TabsTrigger 
                 key={category.id} 
@@ -35,7 +35,7 @@ export function ExperienceSection() {
                   {/* Only show nested tabs on md and larger screens */}
                   <div className="hidden md:block">
                     <Tabs defaultValue={category.subcategories[0].id} className="w-full">
-                      <TabsList className="mb-6 h-auto w-full justify-start gap-2 rounded-full border border-border/70 bg-card/60 p-2">
+                      <TabsList className="mb-6 h-auto w-full justify-start gap-2 rounded-full border border-border/85 bg-card/72 p-2">
                         {category.subcategories.map((sub) => (
                           <TabsTrigger key={sub.id} value={sub.id} className="rounded-full">
                             {sub.label}
@@ -97,13 +97,13 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
                 href={item.websiteUrl} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-flex items-center justify-center rounded-full border border-border/70 bg-card/80 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                className="inline-flex items-center justify-center rounded-full border border-border/85 bg-card/85 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
                 title="Visit website"
               >
                 External Link
               </a>
             )}
-            <span className="rounded-full border border-border/70 bg-card/60 px-3 py-1 text-sm text-muted-foreground">{item.period}</span>
+            <span className="rounded-full border border-border/85 bg-card/72 px-3 py-1 text-sm text-muted-foreground">{item.period}</span>
           </div>
         </div>
       </CardHeader>
@@ -130,7 +130,7 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
             {item.technologies.map((tech) => (
               <span 
                 key={tech}
-                className="rounded-full border border-border/70 bg-card/70 px-3 py-1 text-sm text-muted-foreground"
+                className="rounded-full border border-border/85 bg-card/78 px-3 py-1 text-sm text-muted-foreground"
               >
                 {tech}
               </span>
