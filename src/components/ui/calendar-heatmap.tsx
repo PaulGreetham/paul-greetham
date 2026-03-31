@@ -10,11 +10,11 @@ type CalendarHeatmapProps = {
 }
 
 const heatmapClassNames = {
-  zero: "bg-white/70 border-border/80 dark:bg-[#161b22] dark:border-[#2d333b]",
-  one: "bg-[#c6edcf] border-[#b2dfbf] dark:bg-[#0e4429] dark:border-[#0e4429]",
-  two: "bg-[#93e0a5] border-[#79cf8e] dark:bg-[#006d32] dark:border-[#006d32]",
-  three: "bg-[#57cd72] border-[#43bb5f] dark:bg-[#26a641] dark:border-[#26a641]",
-  four: "bg-[#2cc84d] border-[#1cb33f] dark:bg-[#39d353] dark:border-[#39d353]",
+  zero: "bg-[hsl(var(--heatmap-0))] border-[hsl(var(--heatmap-0-border))]",
+  one: "bg-[hsl(var(--heatmap-1))] border-[hsl(var(--heatmap-1-border))]",
+  two: "bg-[hsl(var(--heatmap-2))] border-[hsl(var(--heatmap-2-border))]",
+  three: "bg-[hsl(var(--heatmap-3))] border-[hsl(var(--heatmap-3-border))]",
+  four: "bg-[hsl(var(--heatmap-4))] border-[hsl(var(--heatmap-4-border))]",
 } as const
 
 const heatmapLegend = [

@@ -23,7 +23,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       variant="ghost"
       size="icon"
       className={cn(
-        "rounded-full border border-border/85 bg-card/80 text-foreground shadow-[0_20px_50px_-30px_hsl(var(--shadow-color)/0.72)] backdrop-blur-xl transition-all hover:border-primary/50 hover:bg-primary/10 hover:text-primary",
+        "relative rounded-full border border-border/85 bg-card/80 text-foreground shadow-[0_20px_50px_-30px_hsl(var(--shadow-color)/0.72)] backdrop-blur-xl transition-all hover:border-primary/50 hover:bg-primary/10 hover:text-primary",
         className
       )}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
