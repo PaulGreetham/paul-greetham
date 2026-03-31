@@ -1,18 +1,8 @@
 import { useId } from "react";
 
 import { cn } from "@/lib/utils";
+import type { DotPatternProps } from "@/types/ui";
 
-interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
-  width?: number;
-  height?: number;
-  x?: number;
-  y?: number;
-  cx?: number;
-  cy?: number;
-  cr?: number;
-  className?: string;
-  [key: string]: unknown;
-}
 export function DotPattern({
   width = 16,
   height = 16,

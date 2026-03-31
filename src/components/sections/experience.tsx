@@ -4,7 +4,8 @@ import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { experienceData, type ExperienceItem } from "@/config/experience-data"
+import { experienceData } from "@/config/experience-data"
+import type { ExperienceItem } from "@/types/experience"
 
 export function ExperienceSection() {
   return (

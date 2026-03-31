@@ -1,9 +1,6 @@
 import { cn } from "@/lib/utils"
 import React from "react"
-
-type LinkButtonProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-  children: React.ReactNode
-}
+import type { LinkButtonProps } from "@/types/ui"
 
 export const LinkButton = React.forwardRef<HTMLAnchorElement, LinkButtonProps>(
   ({ className, children, ...props }, ref) => {

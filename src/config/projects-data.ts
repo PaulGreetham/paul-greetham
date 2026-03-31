@@ -1,14 +1,5 @@
-import { techIcons, type TechIcon } from "@/config/tech-icons"
-
-export type Project = {
-  id: number
-  title: string
-  description: string
-  details: string
-  technologies: TechIcon[]
-  projectUrl: string
-  githubUrl?: string
-}
+import { techIcons } from "@/config/tech-icons"
+import type { Project } from "@/types/projects"
 
 export const projectsData: Project[] = [
   {

@@ -1,5 +1,6 @@
 import { createElement } from 'react'
 import { IconType } from 'react-icons'
+import type { TechIconsMap } from "@/types/tech-icons"
 import { 
   SiNextdotjs,
   SiReact,
@@ -30,11 +31,6 @@ import {
   SiReactivex
 } from 'react-icons/si'
 
-export type TechIcon = {
-  name: string
-  icon: IconType
-}
-
 const RevenueCatIcon: IconType = (props) => (
   createElement(
     'svg',
@@ -45,7 +41,7 @@ const RevenueCatIcon: IconType = (props) => (
   )
 )
 
-export const techIcons: { [key: string]: TechIcon } = {
+export const techIcons: TechIconsMap = {
   "Next.js": {
     name: "Next.js",
     icon: SiNextdotjs

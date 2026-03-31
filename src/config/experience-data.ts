@@ -1,25 +1,4 @@
-export type ExperienceItem = {
-  id: number
-  title: string
-  organization: string
-  location: string
-  period: string
-  companyDescription: string[]
-  duties: string[]
-  technologies?: string[]
-  websiteUrl?: string
-}
-
-export type ExperienceCategory = {
-  id: string
-  label: string
-  subcategories?: {
-    id: string
-    label: string
-    items: ExperienceItem[]
-  }[]
-  items?: ExperienceItem[]
-}
+import type { ExperienceCategory } from "@/types/experience"
 
 export const experienceData: ExperienceCategory[] = [
   {

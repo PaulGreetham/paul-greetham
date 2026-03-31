@@ -3,11 +3,7 @@
 import { eachDayOfInterval, endOfWeek, format, startOfWeek, subMonths } from "date-fns"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import type { CalendarHeatmapData } from "@/lib/github-activity"
-
-type CalendarHeatmapProps = {
-  data: CalendarHeatmapData[]
-}
+import type { CalendarHeatmapProps } from "@/types/ui"
 
 const heatmapClassNames = {
   zero: "bg-[hsl(var(--heatmap-0))] border-[hsl(var(--heatmap-0-border))]",

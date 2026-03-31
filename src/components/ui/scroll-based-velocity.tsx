@@ -12,17 +12,7 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
-
-interface VelocityScrollProps extends React.HTMLAttributes<HTMLDivElement> {
-  defaultVelocity?: number;
-  className?: string;
-  numRows?: number;
-}
-
-interface ParallaxProps extends React.HTMLAttributes<HTMLDivElement> {
-  children: React.ReactNode;
-  baseVelocity: number;
-}
+import type { ParallaxProps, VelocityScrollProps } from "@/types/ui";
 
 export const wrap = (min: number, max: number, v: number) => {
   const rangeSize = max - min;

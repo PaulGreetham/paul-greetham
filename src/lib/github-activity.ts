@@ -1,8 +1,4 @@
-export type CalendarHeatmapData = {
-  date: string
-  count: number
-  level: number
-}
+import type { CalendarHeatmapData } from "@/types/github"
 
 const GITHUB_ACTIVITY_URL = "https://github.com/users/PaulGreetham/contributions"
 

@@ -4,13 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
-
-interface CircleProps {
-  className?: string
-  children: React.ReactNode
-  href?: string
-  tooltip?: string
-}
+import type { CircleProps } from "@/types/sections"
 
 function Circle({ className, children, href, tooltip }: CircleProps) {
   const content = (
