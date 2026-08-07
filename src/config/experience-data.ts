@@ -14,7 +14,7 @@ export const experienceData: ExperienceCategory[] = [
             title: "Software Developer",
             organization: "Swydo",
             location: "Hilversum, NL",
-            period: "April 2025 - Present",
+            period: "April 2025 - August 2026",
             companyDescription: [
               "Swydo is a SaaS platform for automated reporting and monitoring for online marketers. Swydo was launched in 2011 to make marketers’ lives easier by automating their reporting processes with a platform that’s easy to use, flexible and scalable."
             ],
@@ -36,7 +36,7 @@ export const experienceData: ExperienceCategory[] = [
         items: [
           {
             id: 2,
-            title: "Frontend Developer",
+            title: "Software Developer",
             organization: "Check Technologies",
             location: "Amsterdam, NL",
             period: "October 2024 - April 2025",
