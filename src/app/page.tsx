@@ -4,7 +4,7 @@ import { ExperienceSection } from "@/components/sections/experience"
 import { ProjectsSection } from "@/components/sections/projects"
 import { ContactSection } from "@/components/sections/contact"
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col overflow-x-hidden bg-background antialiased">
       <HeroSection />

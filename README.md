@@ -8,15 +8,16 @@ A modern, responsive personal website built with Next.js and TypeScript, featuri
 - **Dark/Light Mode**: Theme toggle with persistent settings
 - **Smooth Animations**: 
   - Scroll-based velocity animations for tech stack display
-  - Text reveal animations
-  - Motion-based transitions
+  - Motion-based entrance transitions
+  - Respects `prefers-reduced-motion`
 - **Interactive Sections**:
   - About section with accordion-style information
   - Experience timeline with tabbed navigation
-  - Project showcase with animated cards
-  - Contact section with animated connection beams
+  - Project showcase with animated cards and tech tooltips
+  - Contact links for LinkedIn, GitHub, email and phone
 - **Modern UI Components**: Built with Shadcn UI, Magic UI and custom components
-- **Performance Optimized**: Built with Next.js
+- **SEO**: Open Graph image, sitemap, robots.txt and Person structured data
+- **Performance Optimized**: Server components by default, with small client islands for animation
 
 ## 🚀 Live Demo
 
@@ -43,6 +44,16 @@ A modern, responsive personal website built with Next.js and TypeScript, featuri
 - ESLint
 - PostCSS
 - Autoprefixer
+- GitHub Actions (lint + build on every push/PR)
+
+## 🛠️ Local Development
+
+```bash
+npm install
+npm run dev     # start dev server
+npm run lint    # lint
+npm run build   # production build
+```
 
 ### Build & Deployment
 - Vercel

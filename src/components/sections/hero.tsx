@@ -1,9 +1,13 @@
-"use client"
-
-import { motion } from "motion/react"
 import { DotPattern } from "@/components/ui/dot-pattern"
+import { Reveal } from "@/components/ui/reveal"
 import { cn } from "@/lib/utils"
 import { typography } from "@/lib/typography"
+
+const highlights = [
+  { label: "Products", items: ["SaaS Platforms", "Mobile Apps"] },
+  { label: "Focus", items: ["MVP Creation", "Frontend/Full-Stack"] },
+  { label: "Background", items: ["Former Founder", "Customer Centric"] },
+]
 
 export function HeroSection() {
   return (
@@ -13,82 +17,48 @@ export function HeroSection() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,hsl(var(--glow-1)/0.22),transparent_32%),radial-gradient(circle_at_bottom_right,hsl(var(--glow-2)/0.18),transparent_30%)]" />
           <div className="relative space-y-14 md:space-y-24">
             <div className="space-y-6">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="glass-chip"
-              >
-                Software Developer
-              </motion.div>
+              <Reveal immediate y={16}>
+                <p className="glass-chip">Software Developer</p>
+              </Reveal>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.2, 0.65, 0.3, 0.9] }}
-                className={cn(
-                  typography.h1,
-                  "max-w-none text-left leading-[1.02] lg:text-[5.5rem] lg:whitespace-nowrap xl:text-8xl"
-                )}
-              >
-                <span className="bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
-                  Hi, I&apos;m Paul Greetham
-                </span>
-              </motion.h1>
+              <Reveal immediate y={24} duration={0.6}>
+                <h1
+                  className={cn(
+                    typography.h1,
+                    "max-w-none text-left leading-[1.02] lg:text-[5.5rem] lg:whitespace-nowrap xl:text-8xl"
+                  )}
+                >
+                  <span className="bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
+                    Hi, I&apos;m Paul Greetham
+                  </span>
+                </h1>
+              </Reveal>
 
-              <div className="max-w-2xl space-y-2">
-                <motion.h2
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className={cn(typography.h3, "text-muted-foreground")}
-                >
-                  Software Developer
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.25 }}
-                  className="text-base leading-8 text-muted-foreground md:text-lg"
-                >
-                  Welcome to my website
-                </motion.p>
-              </div>
+              <Reveal immediate delay={0.2} className="max-w-2xl">
+                <p className="text-base leading-8 text-muted-foreground md:text-lg">
+                  I build modern SaaS platforms, data-heavy dashboards and mobile apps with TypeScript,
+                  bringing a founder&apos;s eye for product and customers to every line of code.
+                </p>
+              </Reveal>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
-              className="grid gap-4 md:grid-cols-3"
-            >
-              <div className="glass-card p-5">
-                <p className="glass-chip mb-4">Products</p>
-                <div className="space-y-1.5">
-                  <p className="text-2xl font-semibold leading-tight">SaaS Platforms</p>
-                  <p className="text-2xl font-semibold leading-tight">Mobile Apps</p>
+            <Reveal immediate delay={0.25} duration={0.6} className="grid gap-4 md:grid-cols-3">
+              {highlights.map((highlight) => (
+                <div key={highlight.label} className="glass-card p-5">
+                  <p className="glass-chip mb-4">{highlight.label}</p>
+                  <div className="space-y-1.5">
+                    {highlight.items.map((item) => (
+                      <p key={item} className="text-2xl font-semibold leading-tight">{item}</p>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="glass-card p-5">
-                <p className="glass-chip mb-4">Focus</p>
-                <div className="space-y-1.5">
-                  <p className="text-2xl font-semibold leading-tight">MVP Creation</p>
-                  <p className="text-2xl font-semibold leading-tight">Frontend/Full-Stack</p>
-                </div>
-              </div>
-              <div className="glass-card p-5">
-                <p className="glass-chip mb-4">Background</p>
-                <div className="space-y-1.5">
-                  <p className="text-2xl font-semibold leading-tight">Former Founder</p>
-                  <p className="text-2xl font-semibold leading-tight">Customer Centric</p>
-                </div>
-              </div>
-            </motion.div>
+              ))}
+            </Reveal>
           </div>
         </div>
       </div>
 
-      <DotPattern 
+      <DotPattern
         className="fixed inset-0 z-0 opacity-60 [mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
         width={16}
         height={16}
@@ -98,4 +68,4 @@ export function HeroSection() {
       />
     </section>
   )
-} 
+}

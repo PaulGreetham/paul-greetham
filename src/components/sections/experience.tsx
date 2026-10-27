@@ -1,5 +1,3 @@
-"use client"
-
 import { typography } from "@/lib/typography"
 import { cn } from "@/lib/utils"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -89,7 +87,7 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
       <CardHeader>
         <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
           <div className="space-y-2">
-            <CardTitle className="text-xl md:text-2xl">{item.title}</CardTitle>
+            <CardTitle as="h3" className="text-xl md:text-2xl">{item.title}</CardTitle>
             <CardDescription>{item.organization} | {item.location}</CardDescription>
           </div>
           <div className="flex flex-wrap items-center gap-3">
@@ -99,9 +97,8 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center rounded-full border border-border/85 bg-card/85 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
-                title="Visit website"
               >
-                External Link
+                Visit {item.organization}
               </a>
             )}
             <span className="rounded-full border border-border/85 bg-card/72 px-3 py-1 text-sm text-muted-foreground">{item.period}</span>
@@ -119,7 +116,7 @@ function ExperienceCard({ item }: { item: ExperienceItem }) {
           <ul className="mt-4 space-y-2 text-sm leading-7 md:text-base">
             {item.duties.map((duty, index) => (
               <li key={index} className="flex gap-3">
-                <span className="mt-2 h-2 w-2 rounded-full bg-primary" />
+                <span aria-hidden="true" className="mt-2 h-2 w-2 shrink-0 rounded-full bg-primary" />
                 <span>{duty}</span>
               </li>
             ))}

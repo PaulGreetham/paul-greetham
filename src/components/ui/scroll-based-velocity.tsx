@@ -1,9 +1,11 @@
 "use client";
 
 import {
-  motion,
+  m,
   useAnimationFrame,
+  useInView,
   useMotionValue,
+  useReducedMotion,
   useScroll,
   useSpring,
   useTransform,
@@ -14,7 +16,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import type { ParallaxProps, VelocityScrollProps } from "@/types/ui";
 
-export const wrap = (min: number, max: number, v: number) => {
+const wrap = (min: number, max: number, v: number) => {
   const rangeSize = max - min;
   return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
 };
@@ -39,6 +41,8 @@ function ParallaxText({
   const [repetitions, setRepetitions] = useState(1);
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(containerRef);
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     const calculateRepetitions = () => {
@@ -60,6 +64,9 @@ function ParallaxText({
 
   const directionFactor = React.useRef<number>(1);
   useAnimationFrame((t, delta) => {
+    // Skip work while off-screen or when the user prefers reduced motion
+    if (!isInView || prefersReducedMotion) return;
+
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
     if (velocityFactor.get() < 0) {
@@ -79,13 +86,13 @@ function ParallaxText({
       className="w-full overflow-hidden whitespace-nowrap"
       {...props}
     >
-      <motion.div className="inline-block" style={{ x }}>
+      <m.div className="inline-block" style={{ x }}>
         {Array.from({ length: repetitions }).map((_, i) => (
           <span key={i} ref={i === 0 ? textRef : null}>
             {children}{" "}
           </span>
         ))}
-      </motion.div>
+      </m.div>
     </div>
   );
 }
@@ -100,7 +107,7 @@ export function VelocityScroll({
   return (
     <div
       className={cn(
-        "relative w-full text-7xl font-bold tracking-[-0.02em] md:text-6xl md:leading-[6rem]",
+        "relative w-full text-5xl font-bold tracking-[-0.02em] md:text-6xl md:leading-[6rem]",
         className,
       )}
       {...props}

@@ -37,16 +37,6 @@
     --glow-2: 279 95% 68%;
     --glow-3: 169 82% 48%;
     --shadow-color: 201 81% 40%;
-    --heatmap-0: 210 38% 99%;
-    --heatmap-0-border: 216 32% 84%;
-    --heatmap-1: 136 54% 85%;
-    --heatmap-1-border: 136 42% 76%;
-    --heatmap-2: 132 57% 72%;
-    --heatmap-2-border: 132 48% 61%;
-    --heatmap-3: 129 56% 56%;
-    --heatmap-3-border: 129 55% 46%;
-    --heatmap-4: 126 66% 48%;
-    --heatmap-4-border: 126 68% 40%;
   }
  
   .dark {
@@ -81,22 +71,19 @@
     --glow-2: 280 100% 70%;
     --glow-3: 170 88% 54%;
     --shadow-color: 189 92% 55%;
-    --heatmap-0: 224 20% 12%;
-    --heatmap-0-border: 216 13% 21%;
-    --heatmap-1: 147 67% 16%;
-    --heatmap-1-border: 147 67% 16%;
-    --heatmap-2: 148 100% 21%;
-    --heatmap-2-border: 148 100% 21%;
-    --heatmap-3: 132 63% 40%;
-    --heatmap-3-border: 132 63% 40%;
-    --heatmap-4: 134 64% 53%;
-    --heatmap-4-border: 134 64% 53%;
   }
 }
  
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  /* Offset in-page anchor targets so the fixed navbar doesn't cover them */
+  section[id] {
+    scroll-margin-top: 5rem;
   }
 
   html.dark {
@@ -168,6 +155,18 @@
     filter: blur(44px);
   }
 
+  /* Fixed backgrounds and large blurs are expensive to repaint on mobile GPUs */
+  @media (max-width: 767px) {
+    body {
+      background-attachment: scroll;
+    }
+
+    body::after,
+    html:not(.dark) body::after {
+      filter: blur(16px);
+    }
+  }
+
   ::selection {
     background: hsl(var(--primary) / 0.28);
     color: hsl(var(--foreground));
@@ -180,7 +179,7 @@
   }
 
   .section-frame {
-    @apply relative z-10 mx-auto w-full max-w-6xl rounded-[2rem] border border-border/85 p-6 shadow-[0_32px_120px_-48px_hsl(var(--shadow-color)/0.65)] backdrop-blur-2xl sm:p-8 md:p-10;
+    @apply relative z-10 mx-auto w-full max-w-6xl rounded-[2rem] border border-border/85 p-6 shadow-[0_32px_120px_-48px_hsl(var(--shadow-color)/0.65)] backdrop-blur-md sm:p-8 md:backdrop-blur-2xl md:p-10;
     background:
       radial-gradient(circle at top left, hsl(var(--glow-1) / 0.16), transparent 28%),
       radial-gradient(circle at bottom right, hsl(var(--glow-2) / 0.14), transparent 26%),
@@ -188,7 +187,7 @@
   }
 
   .glass-card {
-    @apply rounded-[1.75rem] border border-border/85 shadow-[0_24px_80px_-36px_hsl(var(--shadow-color)/0.55)] backdrop-blur-xl;
+    @apply rounded-[1.75rem] border border-border/85 shadow-[0_24px_80px_-36px_hsl(var(--shadow-color)/0.55)] backdrop-blur-sm md:backdrop-blur-xl;
     background:
       linear-gradient(180deg, hsl(var(--card) / 0.94), hsl(var(--card) / 0.84)),
       radial-gradient(circle at top left, hsl(var(--glow-1) / 0.1), transparent 40%);

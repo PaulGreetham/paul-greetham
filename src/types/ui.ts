@@ -29,7 +29,6 @@ export interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
   cy?: number
   cr?: number
   className?: string
-  [key: string]: unknown
 }
 
 export interface VelocityScrollProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -41,8 +40,4 @@ export interface VelocityScrollProps extends React.HTMLAttributes<HTMLDivElement
 export interface ParallaxProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
   baseVelocity: number
-}
-
-export type CalendarHeatmapProps = {
-  data: import("@/types/github").CalendarHeatmapData[]
 }

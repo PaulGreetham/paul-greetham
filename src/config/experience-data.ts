@@ -70,8 +70,8 @@ export const experienceData: ExperienceCategory[] = [
             ],
             duties: [
               "Focussed on working through tickets for the custom built Saas system, including creating new features and fixing bugs.",
-              "Saught to improve the codebase and make it more maintainable and scalable, from both a technical and UX perspective.",
-              "Liased with internal teams to ensure relevant improvements that were needed by the clinets were on point.",
+              "Sought to improve the codebase and make it more maintainable and scalable, from both a technical and UX perspective.",
+              "Liaised with internal teams to ensure relevant improvements that were needed by the clients were on point.",
               "Wrote tests using Cypress and Jest to ensure the code was working as expected and adhered to best practices.",
               "Worked with the design team to ensure the UI was up to standard and adhered to the brand guidelines."
             ],
@@ -127,7 +127,7 @@ export const experienceData: ExperienceCategory[] = [
               "Intensive 3 month training bootcamp, which included weekend and monthly testing.",
               "Programming in a set team of 4 (mob programming).",
               "Used modern stack of TypeScript, React, Redux, MongoDB, Express, HTML, SCSS and Git.",
-              "Final full-stack project witin a team of 4 focussing on B2C e-commerce.",
+              "Final full-stack project within a team of 4 focussing on B2C e-commerce.",
               "Extensive unit and e2e testing using Jest and Cypress."
             ],
             technologies: ["TypeScript", "Redux", "MongoDB", "Express", "HTML", "SCSS", "Git", "Jest", "Cypress"],
@@ -146,14 +146,14 @@ export const experienceData: ExperienceCategory[] = [
             location: "Amsterdam, NL",
             period: "July 2022 - September 2022",
             companyDescription: [
-              "Intensive 10-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of NaturEscape. Modules included:."
+              "Intensive 10-week full-time intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of NaturEscape."
             ],
             duties: [
               "Developed full-stack applications using Ruby on Rails.",
               "Implemented MVC architecture patterns.",
               "Built responsive web applications with Bootstrap.",
               "Worked with SQL databases and Active Record.",
-              "Used with git and GitHub whilst pair programming."
+              "Used git and GitHub whilst pair programming."
             ],
             technologies: ["Ruby", "Rails", "PostgreSQL", "Bootstrap", "HTML", "CSS", "JavaScript"],
             websiteUrl: "https://www.lewagon.com/amsterdam"
@@ -181,7 +181,7 @@ export const experienceData: ExperienceCategory[] = [
             ],
             duties: [
               "Introduction to UI Design",
-              "Brand + Persoanlity",
+              "Brand + Personality",
               "Design Principles & Processes",
               "Layout, Interactivity & Animation",
               "Color, Shapes & Effects",
@@ -273,9 +273,9 @@ export const experienceData: ExperienceCategory[] = [
               "Ability to critically analyse texts to understand the author's intent and the context of the work.",
               "Working in a team to discuss and debate texts and ideas as well as project work.",
               "Political writing in the 20th Century and the works of George Orwell, Aldous Huxley, and Joseph Heller.",
-              "Critial film theory and the role of literature in film and media.",
+              "Critical film theory and the role of literature in film and media.",
             ],
-            technologies: ["English Literature", "Language", "Critical Analysis", "Writing", "Critial Reading", "Group Work", "Presentation Skills", "Public Speaking"],
+            technologies: ["English Literature", "Language", "Critical Analysis", "Writing", "Critical Reading", "Group Work", "Presentation Skills", "Public Speaking"],
             websiteUrl: "https://www.mmu.ac.uk/study/undergraduate/course/ba-english"
           }
         ]

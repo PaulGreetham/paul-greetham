@@ -2,8 +2,9 @@ import "./globals.css"
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import Navbar from '@/components/Navbar'
-import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from '@vercel/analytics/next'
+import { Providers } from "@/components/providers"
+import { siteConfig } from "@/config/site"
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,8 +19,34 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Paul Greetham',
-  description: 'Personal website',
+  metadataBase: new URL(siteConfig.url),
+  title: siteConfig.title,
+  description: siteConfig.description,
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+}
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  jobTitle: siteConfig.jobTitle,
+  address: { "@type": "PostalAddress", addressCountry: "NL" },
+  sameAs: [siteConfig.links.github, siteConfig.links.linkedin],
 }
 
 export default function RootLayout({
@@ -30,15 +57,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          storageKey="paul-greetham-theme"
-        >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <Providers>
           <Navbar />
           {children}
-        </ThemeProvider>
+        </Providers>
         <Analytics />
       </body>
     </html>
