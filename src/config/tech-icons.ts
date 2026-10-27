@@ -41,7 +41,7 @@ const RevenueCatIcon: IconType = (props) => (
   )
 )
 
-export const techIcons: TechIconsMap = {
+export const techIcons = {
   "Next.js": {
     name: "Next.js",
     icon: SiNextdotjs
@@ -166,4 +166,6 @@ export const techIcons: TechIconsMap = {
     name: "RevenueCat",
     icon: RevenueCatIcon
   }
-} as const 
+} as const satisfies TechIconsMap
+
+export type TechName = keyof typeof techIcons
