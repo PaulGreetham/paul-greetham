@@ -2,6 +2,7 @@ import "./globals.css"
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import { Analytics } from '@vercel/analytics/next'
 import { Providers } from "@/components/providers"
 import { siteConfig } from "@/config/site"
 
@@ -64,6 +65,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   )
