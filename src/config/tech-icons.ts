@@ -19,8 +19,7 @@ import {
   SiSupabase,
   SiYoutube,
   SiAxios,
-  SiCss3,
-  SiOpenai,
+  SiCss,
   SiGithub,
   SiGitlab,
   SiFigma,
@@ -124,11 +123,7 @@ export const techIcons = {
   },
   "CSS": {
     name: "CSS",
-    icon: SiCss3
-  },
-  "OpenAI": {
-    name: "OpenAI",
-    icon: SiOpenai
+    icon: SiCss
   },
   "Github": {
     name: "Github",

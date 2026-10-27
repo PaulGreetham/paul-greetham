@@ -23,7 +23,11 @@ const Navbar = () => {
     <div className="fixed inset-x-0 top-4 z-50 px-4">
       <nav
         aria-label="Main"
-        className="mx-auto max-w-6xl rounded-full border border-border/85 bg-background/78 px-3 py-2 shadow-[0_24px_60px_-32px_hsl(var(--shadow-color)/0.7)] backdrop-blur-md md:backdrop-blur-2xl"
+        className={cn(
+          "mx-auto max-w-6xl border border-border/85 bg-background/78 px-3 py-2 shadow-[0_24px_60px_-32px_hsl(var(--shadow-color)/0.7)] backdrop-blur-md md:backdrop-blur-2xl",
+          // A pill shape stretches into an oval once the mobile menu expands inside it
+          isOpen ? "rounded-[1.75rem]" : "rounded-full"
+        )}
       >
         <div className="flex items-center justify-between gap-3">
           <a
